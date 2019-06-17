@@ -1,0 +1,29 @@
+#+TITLE: file of bits not required for the website
+# could be useful for papers, etc.
+
+
+* edited from Self-Assembly Unit
+
+*** Prototyping an interactive system
+
+[[file:sa-unit5.jpg][file:sa-unit5.jpg]]
+
+ In /Self Assembly Unit/ , each of the cards (or in the second piece in the series, individual elements within the score) holds only one musical parameter: pitch, rhythm, dynamics, sounds, techniques. The musician assembles a series of 'moments'+ from the parameters, and then places them within a structural frame. How that happens is open to discussion and debate amongst the ensemble, and the act of /placing/ the moment within the structural frame requires rehearsal and experiment. So enough instruction is provided to be able to make the piece which fits a known form, yet how it turns out is up to you. It's a bit like assembling a piece of flat-pack furniture. 
+
++(not in a Stockhausen sense)
+
+*** James and Peyee
+
+[[file:sa-unit6.jpg][file:sa-unit6.jpg]]
+
+Enter James Woodrow and Peyee Chen. Superb improvisers. 
+
+Self assembly Unit Number 1 is a design specification. The important features of the structure are made visually clear, without text explanation, in the score. Peyee and James were completely free to make choices based on any particular interaction of these materials, provided the relationships between sections and subsections in terms of timing and co-ordination are observed. More of this, in a moment.
+
+The second stage of this work was to achieve some kind of better co-ordination between the players. The card-based prototype of the first rehearsal generated interesting material, but ultimately lacked the ability to co-ordinate section boundaries in time. A video-score was therefore chosen to be able to articulate this, and, in doing so, I wanted to take advantage of the medium to allow materials to come into focus, and be forgotten by the musicians.  Simply fading in and out from view of materials, with the understanding that when a material was not in view that it could be forgotten, and when a material was fading from view, it's influence was less strong and could be departed from. Thus the idea of the simplest and most straightforward transition in video - the fade - could taken on rehearsal significance and engage the memory and imagination of the musicians.
+
+*** Open data and reproducible
+
+Make your own! 
+
+Reproducible research in the sciences is very much about showing how a particular conclusion was arrived at. Typically, people avoid reproducible research where a) they want to hide the method because they aren't sure about it b) it's going to be proprietary property or c) it simply isn't practical to mention. In composition, we don't often show our working. This isn't necessarily a /bad thing/, as some pieces are best in final form, but there ought to be the opportunity too to expose the creative process and the data behind it for others to make use of. 

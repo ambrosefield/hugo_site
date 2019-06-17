@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-05-31 Fri 20:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Ambrose Field" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="outline-container-orgce7afd9" class="outline-2">
+<h2 id="orgce7afd9"><span class="section-number-2">1</span> Music</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org4ee16f9" class="outline-3">
+<h3 id="org4ee16f9"><span class="section-number-3">1.1</span> Ambrose Field: Featured Music</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org8086335"></a>Architexture I<br />
+<div class="outline-text-5" id="text-1-1-0-1">
+<p>
+{{&lt; youtube id="OksbYjYq9bg" &gt;}}
+</p>
+</div>
+</li>
+<li><a id="orge379984"></a>Pod two: in memoriam Gorecki<br />
+<div class="outline-text-5" id="text-1-1-0-2">
+<p>
+{{&lt; youtube id="-eAPAleUSVw" &gt;}}
+</p>
+</div>
+</li>
+<li><a id="org40fc896"></a>Being Dufay<br />
+<div class="outline-text-5" id="text-1-1-0-3">
+<p>
+{{&lt; dufay &gt;}}
+</p>
+
+<p>
+## [[<a href="https://open.spotify.com/album/3cqtE4CdZbLMJdPT9XJwe9">https://open.spotify.com/album/3cqtE4CdZbLMJdPT9XJwe9</a>][Listen on Spotify: Being Dufay]
+</p>
+
+<p>
+[BEING]{{&lt; spotify "3C2AGv5NxbE5HysFbeSxZC" &gt;}}
+</p>
+
+<p>
+[&gt;&gt; Explore more music](/pages)
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org8f22301" class="outline-2">
+<h2 id="org8f22301"><span class="section-number-2">2</span> Pages</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orga174947" class="outline-3">
+<h3 id="orga174947"><span class="section-number-3">2.1</span> Architexture Series: evidence-based, bespoke architectually linked compositions.</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+
+<div id="outline-container-org9f78cc8" class="outline-4">
+<h4 id="org9f78cc8"><span class="section-number-4">2.1.1</span> The Architexture Series Music</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+The <i>Architexture Series</i> of works makes use of the sonic profile of buildings as an evidence base for musical composition. 
+</p>
+
+<p>
+Detailed links between the musical score and the unique spatial and acoustic characteristics of the performance site are embedded within these compositions. Modelling the acoustic in this way during the musical composition process can help achieve a closer bond between the notes on the page and the sound perceived by listeners.  
+</p>
+
+<p>
+The purpose of this project is to blur the lines between space, live-art and performance by allowing the situated built environment to become an essential part of a living and evolving musical construction process. 
+</p>
+
+<p>
+Traditionally, composers for centuries have anticipated how spaces are appropriate for the music they write, and acoustic music generally reflects the constraints of performance acoustics it was intended for. 
+</p>
+
+<p>
+In the <i>Architexture Series</i> the resonant sounds created by buildings in response to the perfromance are not left to chance. Instead, the whole system of performers, space, and musical score is treated as a sound-making environment which can be designed for. This work builds on traditional ideas of writing music for a particular space but re-thinks some of the inherent relationships involved. It attempts to use the space itself as a live sonic performer within an ensemble - an active contributor to an unfolding composition - rather than as a static 'effect'. Through designing structured ways to provoke reverberation, to blur certain harmonies and not others, to respond to particular spatial locations and not others, opens up new compositional possibilities. This is only possible through detailed acoustical analysis and a composition process which makes use of this information as an evidence-base for sculpting lines and harmonies.
+</p>
+
+<p>
+The <i>Architexture Series</i> presently comprises three explorations into this area through addressing the layering of past and present within a heritage building (The Guildhall, York), a large-scale openair public Augmented Reality Presentation (European researcher's night), and a spatially recorded piece of audio under controlled studio conditions.
+</p>
+
+<p>
+New relationships between audience, the performance site and the performers emerge from these bespoke pieces of music for voices. <i>Architexture I</i> and <i>Architexture 2</i> both draw on a combination of Renaissance influenced musical craft and spatial data provided through contemporary digital techniques. 
+</p>
+
+<p>
+<img src="ambrosefield_architexture_header1.jpg" alt="ambrosefield_architexture_header1.jpg" />
+&lt;sub&gt;&lt;sup&gt;&lt;sub&gt;Images: Ian Martindale&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5f792a2" class="outline-4">
+<h4 id="org5f792a2"><span class="section-number-4">2.1.2</span> Sites, resonances, and history</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<p>
+Reverberation has always been attractive to me as a composer: the joy of hearing performances where a buildings make a unique contribution to the event is a thrilling experience. However, I started to wonder about how composers might further design the effects the building was producing alongside designing the musical score itself. . Setting aside famous examples such as Gabrielli, many composers tend to think about the acoustic in every aspect of the music they make, looking for clarity of presentation or whether certain textures will simply 'work' in a space. The environment has an imprint on the types and styles of music what we create. I wanted to take this idea a little further, and explore how the sounds of the performance site could be generated and manipulated by the ensemble: building an ensemble as a unified system, working together and challenging the concept of a performance in, or for, a space. Alvin Lucier's piece, <i>I am sitting in a room</i> plays back a room's particular resonance into itself, converting the resonance to a sound source in its own right. There are no other sound sources in Lucier's piece, nor are there any performers. I wanted to harness this now familiar relationship (the idea of 'room tone', as film makers would put it) and take it to a new level: what happens when that resonance itself is manipulated by the performance. To do this required knowing about the detailed acoustic response of venues in advance of composing, and the construction of a computer modelling system so that the notated results of the musical composition could be visualised as harmony with a detailed reverberation profile of the building factored in. My method for doing this is discussed in a research chapter in [this publication]({{&lt;ref "CompResonance.md" &gt;}}). With these tools, when it came to putting notes on the page I could understand the effects and contribution the building would make to the totality of the sounding experience the audience would be immersed within. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org32986a4" class="outline-4">
+<h4 id="org32986a4"><span class="section-number-4">2.1.3</span> Composition, Live-Art and Augmented Reality (AR).</h4>
+<div class="outline-text-4" id="text-2-1-3">
+
+<div class="figure">
+<p><a href="ambrosefield_architexture_performance.jpg"><img src="ambrosefield_architexture_performance.jpg" alt="ambrosefield_architexture_performance.jpg" /></a>
+</p>
+</div>
+
+<p>
+It would be relatively straightforward to map reverberant data points as a kind of sonification. (Sonification doesn't rule out musicality - it is just a different type of process). Instead,  data here in the Architexture Series informs a process where the music I write for performers is shaped and moulded appropriately, treating the reverberation as a line or part in its own right in what is already a dynamic,complex system of interactions. This creates a piece of <i>live-art</i>: the existing building having it's role changed and adapted by the music.
+</p>
+
+<p>
+In <i>Architexture II</i>, we worked with a building that doesn't presently exist today through reconstruction and modelling of that space, brought alive by music which specifically uses those spatial characteristics, presented as an audio Augmented Reality. See the  [Architexture II page]({{&lt;ref "architexture2.md" &gt;}}) for details.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb06c0b8" class="outline-4">
+<h4 id="orgb06c0b8"><span class="section-number-4">2.1.4</span> Multi-disciplinary collaboration</h4>
+<div class="outline-text-4" id="text-2-1-4">
+<p>
+Architexture is a multi-disciplinary project which would not be possible without arts-science collaboration, made possible at the University of York, UK. Often, Art is used as a demonstrator or engagement tool for science, but in this case, acoustic engineering (here in the form of the capture of impulse responses) is a key enabler in creating new forms of immersive public experience through musical craft. Through new music designed to explore site in new ways (rather than through the performance of existing work), creating a situation where the audience are less observers and more participants. The overlay of space and place allows us to think critically about the sites, buildings and the communities which make (or have made) use of them.
+</p>
+
+
+<div class="figure">
+<p><a href="ambisonics-architexture.jpg"><img src="ambisonics-architexture.jpg" alt="ambisonics-architexture.jpg" /></a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org704713a" class="outline-4">
+<h4 id="org704713a"><span class="section-number-4">2.1.5</span> Meet the team</h4>
+<div class="outline-text-4" id="text-2-1-5">
+<p>
+Ambrose Field and Jude Brereton, project leads&lt;br&gt;
+Jude Brereton, Helena Daffern | acoustic engineering research&lt;br&gt;
+Paul Gameson | Conductor, Ebor Singers&lt;br&gt;
+The Ebor Singers | Ensemble&lt;br&gt;
+Ambrose Field | Musical composition, acoustic mapping&lt;br&gt;
+</p>
+
+<p>
+The Architexture II performance was made possible through the work of:
+</p>
+
+<p>
+Steven Oxnard | St Mary's Impulse Response Model and Calculation&lt;br&gt;
+Ameila Gully | Acoustics&lt;br&gt;
+Lewis Thresh | Processing Graphics&lt;br&gt;
+Thmoas Krauss | Light&lt;br&gt;
+Ian Martindale | Photography&lt;br&gt;
+Radek Rudnicki | Event Video&lt;br&gt;
+Damian Murphy | Acoustics Engineering &lt;br&gt;
+Andrew Chadwick | Ambisonics and Live Sound&lt;br&gt;
+Ben Pugh | Event Management&lt;br&gt;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7de031d" class="outline-4">
+<h4 id="org7de031d"><span class="section-number-4">2.1.6</span> Publications about project</h4>
+<div class="outline-text-4" id="text-2-1-6">
+<p>
+Book chapters:
+</p>
+
+<p>
+Field A. (2016) <i>Composing for the Resonance</i>. Open Music Composer’s Book Vol. 3. Jean Bresson, Gérard Assayag, and Carlos Agon, eds. Paris: Editions Delatour, IRCAM. 
+</p>
+
+<p>
+Brereton, J. (2017) <i>Music perception and performance in virtual acoustic spaces</i>. Body, Sound and Space in Music and Beyond: Multimodal Explorations. Wöllner, C. (ed.). Routledge.
+</p>
+
+<p>
+Related Articles:
+</p>
+
+<p>
+Murphy, D. T., Shelley, S. B., Foteinou, A., Brereton, J. S. &amp; Daffern, H. (2017), <i>Acoustic Heritage and Audio Creativity: the Creative Application of Sound in the Representation, Understanding and Experience of Past Environments</i>. Special issue in Internet Archaeology.
+</p>
+
+<p>
+Presentations:
+</p>
+
+<p>
+Field, A. (2016) <i>Sound in space</i> - Research colloquia, HKBU, HongKong, Sept 2016.
+</p>
+
+<p>
+Field, A.: (2017) <i>Reverse Spectralism: designing for the acoustic</i>, University of Oxford, Spectralisms Conference, March 16/17, 2017.
+</p>
+
+<p>
+Field, A., Brereton J.,(2015): <i>Architexture II Realisation</i>, European Researchers' night, York, Sept 25th, 2015 
+</p>
+
+<p>
+Initial work was presented by Field and Brereton at <i>Sounds in Space</i> Symposium, University of Derby, 2014.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4eaaa87" class="outline-4">
+<h4 id="org4eaaa87"><span class="section-number-4">2.1.7</span> Bringing contemporary perspectives to historical architecture</h4>
+<div class="outline-text-4" id="text-2-1-7">
+<p>
+The architexture project has involved creating bespoke music for sites of historic, cultural and acoustic interest. In the heritage context, we have rejected ideas of providing a kind of 'audio time travel' (or taking the audience back to a particular period in time) in favour of creating a situation where the public can experience the past and present together in a unified way through immersive music - inviting thoughtful engagement through personal comparison between past and present.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1d4d09a" class="outline-4">
+<h4 id="org1d4d09a"><span class="section-number-4">2.1.8</span> Listen</h4>
+<div class="outline-text-4" id="text-2-1-8">
+<p>
+Further explore the Architexture Series here:
+</p>
+
+<p>
+[Architexture I]({{&lt; ref "architexture1.md" &gt;}}) &lt;br&gt;
+[Architexture II]({{&lt; ref "architexture2.md" &gt;}}) &lt;br&gt;
+</p>
+
+<p>
+Architexture III is presently in production.
+</p>
+
+<p>
+related work: &lt;br&gt;
+[Pod Twoja Obrne]({{&lt; ref "podtwoja.md" &gt;}}) &lt;br&gt;, for 25 part choir.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf3e955d" class="outline-4">
+<h4 id="orgf3e955d"><span class="section-number-4">2.1.9</span> Commissioning for your venue</h4>
+<div class="outline-text-4" id="text-2-1-9">
+<p>
+The architexture team produce exciting new musical work which engages with ensembles, heritage and communities. If you would like to explore working with us we'd be happy to hear from you.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3c4209c" class="outline-3">
+<h3 id="archone"><a id="org3c4209c"></a><span class="section-number-3">2.2</span> Architexture I, for 10 part choir</h3>
+<div class="outline-text-3" id="text-archone">
+<p>
+18 mins |  2012 |  10-part Choir (SSAATTBarBarBB)
+</p>
+
+<p>
+{{&lt; youtube id="OksbYjYq9bg" &gt;}}
+</p>
+</div>
+<div id="outline-container-orga33609e" class="outline-4">
+<h4 id="orga33609e"><span class="section-number-4">2.2.1</span> About the composition</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<p>
+<span class="underline">Architexture I</span> is a choral music work in which the acoustic of the performance venue is designed into the substance of the music itself. This is done through the use of three-dimensional acoustic analysis techniques to inform a traditional “pen and paper” composition process. The harmony, the speed of vocal entries, and the way they overlap each other in time, are sculpted with knowledge of the architectural acoustics of the space. Specific chords linger in the air, resulting in a beautiful unity of space and notes. Pieces in the architexture series are designed specifically for a particular choir and venue. The musical language is a richly harmonic one, exploiting the author's 'extensible polyphony' technique to achieve clarity within dense, overlapping vocal textures.
+</p>
+
+<p>
+Architexture I is scored for 10 part choir (S,S,A,A,T,T,Ba,Ba,B,B one-to-a-part) lasting 18 minutes duration. 
+</p>
+
+<p>
+The piece as recorded above is configured for the acoustic of the Guildhall, a heritage building in York, UK. If you would like to present a new version of this piece which fully exploit the acoustic your venue for any number of performers, I would be happy to hear from you.
+</p>
+
+<p>
+See [this description]({{&lt; ref "archproject.md" &gt;}}) of the architexture project itself for more information.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5262765" class="outline-3">
+<h3 id="org5262765"><span class="section-number-3">2.3</span> Architexture II, for 6 part choir&#xa0;&#xa0;&#xa0;<span class="tag"><span class="_AR">@AR</span>&#xa0;<span class="_acoustics">@acoustics</span>&#xa0;<span class="_heritage">@heritage</span>&#xa0;<span class="_liveart">@liveart</span></span></h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+20 mins |  2015 |  6-part Choir (SSAATB)
+</p>
+
+<p>
+Architexture II was composed for a public augmented reality
+experience. Over 600 people attended the premier at St. Mary's York,
+where we re-constructed the acoustic St Mary's would have had were it
+still standing, and performed Architexture II - a vocal work
+specifically designed to provide an immersive and accurate interaction
+with with the re-created space.
+</p>
+
+<p>
+See [this description]({{&lt; ref "archproject.md" &gt;}}) of the architexture project itself for more information.
+</p>
+
+
+<div class="figure">
+<p><a href="ambrosefield_architexturegig.jpg"><img src="ambrosefield_architexturegig.jpg" alt="ambrosefield_architexturegig.jpg" /></a>
+</p>
+</div>
+
+<p>
+{{&lt; youtube id="KZWeDSgkPDg" &gt;}}
+</p>
+</div>
+
+<div id="outline-container-org22f5bd4" class="outline-4">
+<h4 id="org22f5bd4"><span class="section-number-4">2.3.1</span> Performing this work elsewhere</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<p>
+As the acoustic is simulated in this piece, it is possible to re-perform the work in other venues. The score and patch for PureData (Pd) is available upon request from the author. Later this year, these will be placed on my public github repository.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org9ecb6cf"></a>Musical Construction<br />
+<div class="outline-text-5" id="text-2-3-1-1">
+<p>
+Architexture II, a 20 minute vocal work for six part choir  exploits the specific architectural acoustics characteristics of a heritage building which is no longer present today. As this is new music, and not a 'historical re-construction', it is possible to bring the public experience closer to the reality of the past in new ways: the composition Architexture II is designed to closely match <i>this</i> physical site. If we had selected generic repertoire from the same period to perform within a simulated acoustic, it would not be possible to fully <i>know</i> that the works really had a tight relationship with the exact building with which we were working, or indeed how choral directors of the day would have articulated them due to the limitations of written documentary evidence from the period and the issue that authentic performance scholarship whilst a valuable resource can not fully capture the actual sounding experience of interacting with a particular space from this period on a detailed and nuanced level. A powerful case for new composition for heritage applications emerges as these relationships can be constructed from the present day in order to present a more rigorously evidenced view of the past.
+</p>
+</div>
+</li>
+<li><a id="org098c71c"></a>Spatial Re-construction<br />
+<div class="outline-text-5" id="text-2-3-1-2">
+<p>
+The previous section has outlined how new music was constructured to match the acoustic measurements of a historic building. The performance itself was placed in that space using applied audio engineering techniques as follows. 
+</p>
+
+<p>
+From site measurements and historical architectural materials data, it is possible to construct an impulse response of a venue using commercial available architectural acoustics software, such as <a href="https://odeon.dk/">Odeon</a>. The acoustics team used an impulse response generated by Stephen Oxnard, of the Department of Electronics University of York, as the starting point for an ambisonics realisation. This data is available on the OpenAIR lib impulse response archive site. You can download this impulse response and apply it to your own recorded media from 
+</p>
+
+<p>
+In a team lead by Dr Jude Brereton, Live procesing was applied in a straightforward manner to each singer's microphone via convolution - running the <a href="http://www.reaper.fm">REAPER</a> audio production worksation as a live tool, then decoded through an ambisonics loudspeaker array to give the audience a spatially relevant presentation of the music. Given that the music and acoustic are not separate entities in this performance, care was taken to make sure the live sound (including reflections from the existing building) were appropriate to the demands of the score.  
+</p>
+
+<p>
+<a href="st-marys-site.jpg"><img src="st-marys-site.jpg" alt="st-marys-site.jpg" /></a>
+St. Mary's as it stands today.
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgc12fedd" class="outline-3">
+<h3 id="orgc12fedd"><span class="section-number-3">2.4</span> Frozen Reflection, Sleeping Buffalo: Piano and mechanical resonators</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+19 mins |  2017 |  Piano Solo
+<a href="megumi1.jpg"><img src="megumi1.jpg" alt="megumi1.jpg" /></a>
+<i>Megumi Masaki</i>
+</p>
+</div>
+
+<div id="outline-container-org31e4583" class="outline-4">
+<h4 id="org31e4583"><span class="section-number-4">2.4.1</span> About the work</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<p>
+<i>Frozen Reflection, Sleeping Buffalo</i> uses EBows - electromechanical resonating devices, not as drones in their own right, but to provoke delaicate and unusual timbres from sustained piano chords. The EBows continually vibrate a string as if it had infinate sustain (and are often used by guitarists for this purpose). The piano pedal in this work forms a kind of 'envelope' control, opening up and closing down this resonance. The sounds made by the EBows modlate the chords played by the pianist, creating a shimmering haze of harmonics. The drone itself blends into the background, creating a kind of horizon in the sound landscape around which everything else circulates.
+</p>
+
+<p>
+<a href="ebows-on-stringsP.jpg"><img src="ebows-on-stringsP.jpg" alt="ebows-on-stringsP.jpg" /></a>
+<i>ebow positioning on piano strings</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org03f9c55" class="outline-4">
+<h4 id="org03f9c55"><span class="section-number-4">2.4.2</span> Arctic cold</h4>
+<div class="outline-text-4" id="text-2-4-2">
+<p>
+It's late December. Air from the Arctic drifts slowly over Alberta, and temperatures reach a chilling minus 30 degrees Celsius. <i>Frozen Reflection Sleeping Buffalo</i> is inspired by the First Nations Legend of Sleeping Buffalo. The piece stems from a period working as an artist at the Banff Centre for the Arts and Innovation, Canada, in Dec 2016. My project at the time was to work on a large-scale orchestral commission. However, whilst doing so I discovered a design method which could combine fixed external resonances with my own choice of colours.  
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0d4c959" class="outline-4">
+<h4 id="org0d4c959"><span class="section-number-4">2.4.3</span> Ebow sounds</h4>
+<div class="outline-text-4" id="text-2-4-3">
+<p>
+The Ebows produce a kind of etherial constant drone sound, but
+interestingly, also <i>modulate</i> the decay of the other sounds. You can
+hear a shimmering quality to the sustains as a result of this aural
+effect. After realising this, I decided to compose these effects into
+the piece by finding harmonies and textures which would provoke them.
+</p>
+
+<p>
+Using EBows on the piano can be a challenge, as other composers have
+found. The strings to be a low-tension enough to be able to vibrate by
+the effects of a magnetic field, yet not so thick that they are too
+heavy to move. This limits the range over which you can place them on
+the piano. The results are slightly different for different pianos too.
+After much experimentation, I settled on a range of C4 - REFERENCE.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgba1bd4d" class="outline-4">
+<h4 id="orgba1bd4d"><span class="section-number-4">2.4.4</span> Musical structure</h4>
+<div class="outline-text-4" id="text-2-4-4">
+<p>
+I've been working with on idea of designing a <i>musical surface</i>, rather
+than accepting a 'surface' (here taken to mean the totality of the
+sounding result) as a consequence of other design processes. Composing
+this way is a bit like sculpting a large block of granite in order to
+unconvering the form. It's subtractive. In this music, different parts
+of the surface fades in and out of focus over time. Harmonic centres of
+importance are spread over the piece so that they become exposed and
+then gradually subside throughout the piece. Here's a visualisation:
+</p>
+
+
+<div class="figure">
+<p><a href="froz_ref_density.png"><img src="froz_ref_density.png" alt="froz_ref_density.png" /></a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org28d9f6c" class="outline-4">
+<h4 id="org28d9f6c"><span class="section-number-4">2.4.5</span> Organisation</h4>
+<div class="outline-text-4" id="text-2-4-5">
+<p>
+<i>Frozen Reflection Sleeping Buffalo</i> has two sections. In the first,
+small, isolated moments are set against a continuity of delicate drones
+provided by the Ebows. Tiny changes in the resonance of the decay occur
+as the ebow drones interfere with the other pitches to produce
+modulation artefacts. In order to design these more carefully than in my
+initial experiements, I needed to model these acoustic effects in Open
+Music (see below).
+</p>
+
+<p>
+The second section is a reversal, or reflection of the first in almost
+every way. Instead of building harmony on top of drone-like resonances
+as previously, I wanted to gradually fill out the negative-space around
+the drone-sounds is inverted with dense, angular chromatic writing.
+</p>
+
+<p>
+The piano chords appear to take on a transparent, shimmering quality
+during these silences-in-sound.
+</p>
+
+
+<div class="figure">
+<p><a href="frozen1.jpg"><img src="frozen1.jpg" alt="frozen1.jpg" /></a>
+</p>
+<p><span class="figure-number">Figure 5: </span>frozen1</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1767da9" class="outline-4">
+<h4 id="org1767da9"><span class="section-number-4">2.4.6</span> Watch the video</h4>
+<div class="outline-text-4" id="text-2-4-6">
+<p>
+{{&lt; youtube id="e2-Ndzyv6K0" &gt;}} <i>Listen quietly, with headphones</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org87607b1" class="outline-4">
+<h4 id="org87607b1"><span class="section-number-4">2.4.7</span> Tunnel Mountain</h4>
+<div class="outline-text-4" id="text-2-4-7">
+<p>
+In the First Nations legend Tunnel mountain, Banff, is a
+reagrded as a sacred place. It is a place where people come to share knowledge and
+discover new bonds to their surroundings and culture. Then they leave.
+</p>
+
+
+<div class="figure">
+<p><a href="sleepingbuffalo.jpg"><img src="sleepingbuffalo.jpg" alt="sleepingbuffalo.jpg" /></a>
+</p>
+</div>
+
+<p>
+<i>photo: Courtney Powless</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org936b41e" class="outline-4">
+<h4 id="org936b41e"><span class="section-number-4">2.4.8</span> Score download</h4>
+<div class="outline-text-4" id="text-2-4-8">
+<p>
+The score can be downloaded from <a href="https://github.com/ambrosefield/FIELD_Frozen_Reflection_Sleeping_Buffalo_Piano">here</a>. 
+</p>
+
+<p>
+My scores are now hosted as open-source publications on GitHub: this enables the current version published to reflect the current edition of the work. You can also suggest changes (contact me for advice on how to do this) and have your changes merged back into the main document for others to download should you so wish. Information merged back into the project can include performance notes, annotations or suggestions.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org48779ea" class="outline-3">
+<h3 id="org48779ea"><span class="section-number-3">2.5</span> Self-Assembly Unit Series: rethinking score design as reproducable research</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+2019 | Works intended to be built by performers
+</p>
+</div>
+<div id="outline-container-org92e2ca2" class="outline-4">
+<h4 id="org92e2ca2"><span class="section-number-4">2.5.1</span> Information</h4>
+<div class="outline-text-4" id="text-2-5-1">
+<p>
+A series of pieces where the musicians structure an off-line
+design process themselves. The score describes these activities, rather than a performance.
+</p>
+
+
+<div class="figure">
+<p><a href="sa-unit3.jpg"><img src="sa-unit3.jpg" alt="sa-unit3.jpg" /></a>
+</p>
+</div>
+
+<p>
+&gt; You can credit yourselves as composers for these pieces under a creative commons license.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org737de06"></a>Scoring the rehearsal process, not the performance<br />
+<div class="outline-text-5" id="text-2-5-1-1">
+<p>
+The purpose of this work is to investigate what a score for a 'rehearsal process' might be (rather than a score aimed at a 'realisation' of a 'performance'.) 
+</p>
+
+<ul class="org-ul">
+<li>A parametric, modular score is given where musicans are encouraged to think about the <i>workflow of a design process</i>, rather than to generate sound in a responsive manner to visual stiumuli.</li>
+</ul>
+
+<p>
+Whilst plenty of scores from Medieval Music to Open Form composition address the challenges of creatively empowering performers, few address the actual rehearsal process itself: the <i>when</i> and <i>why</i> of collaborative decision making <i>whilst in the act of assembling a piece</i>. <i>Self-Assembly Unit</i> series of pieces explores these questions.
+</p>
+
+
+<div class="figure">
+<p><a href="sa-unit4.jpg"><img src="sa-unit4.jpg" alt="sa-unit4.jpg" /></a>
+</p>
+</div>
+</div>
+</li>
+
+<li><a id="orgcd9a49c"></a>on Timelines and Improvisation<br />
+<div class="outline-text-5" id="text-2-5-1-2">
+<p>
+Timelines are often seen as restrictive by improvisors, and graphic score, whilst open-ended, still offers the possibility that the interpretation of even the most abstract visuals will be measured against the works previously made by a particular composer, or failing that, within a broader tradition to which the graphics might be perceived to belong.
+</p>
+
+<ul class="org-ul">
+<li>I wanted to reject both of these notions, by turing over the timeline construction as an explicit and defined process to the musicians, in such a way that the process of assembly here has both real-time, and <i>off-line</i> elements to it.</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org0c50418"></a>Flexible, modular score elements and flatpack furniture<br />
+<div class="outline-text-5" id="text-2-5-1-3">
+<p>
+Self-Assembly Unit is a series of modular works then, which include the basic ingredients from which a whole work might be fashioned. This isn't a re-assembly of an existing aesthetic either, rather, the performers must go through a series of stages to assemble, from scratch, something which resembles the broad materials and proportions present in the score. 
+</p>
+
+<p>
+Self-Assembly Unit Series is inspired by authorship debates and flatpack furniture. 
+</p>
+</div>
+</li>
+
+<li><a id="org2190360"></a>Reproducable research<br />
+<div class="outline-text-5" id="text-2-5-1-4">
+<p>
+In research, reproducable-research means that it is possible to inspect the working (generally: code, raw data, processing methods) behind the conclusions presented. I wanted to expose the 'internals' of a composition process to performers, and structure <i>how</i> the assembly of elements is made. 
+</p>
+
+<p>
+To do this, all the internal elements that go into <i>the process of</i> making up a piece are exposed to the musicians, for change and modification. This is a different way of working to, for example, improvising around a stimulus, as longer-term structural decision making is required to define a collaborative sequence of events. <i>Self Assembly Unit</i> is a score for the <i>workflow</i> of assembly.
+</p>
+</div>
+</li>
+
+<li><a id="orgd30eba0"></a>Do I call you performers or composers?<br />
+<div class="outline-text-5" id="text-2-5-1-5">
+<p>
+ <i>Self assembly unit</i> makes no assumptions about a performance occurring from the score in real-time: there is no sense of 'realisation' (in a performative sense) here. Instead, design relationships are suggested around which the performer can generate a complex web of materials.
+This score then is entirely off-line and non-realtime. It also has nothing to do with the <i>act</i> of performance either, although it prepares the way for this. 
+</p>
+
+<p>
+If you are <i>musicians</i> encompasing performers and composers, then what am I? I'm happy with the idea of being <i>desginer</i> for this piece. I've set the overall parameters, but the workflow of creativity is up to you.
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orga99f743" class="outline-4">
+<h4 id="orga99f743"><span class="section-number-4">2.5.2</span> Self Assembly Unit Toolkit</h4>
+<div class="outline-text-4" id="text-2-5-2">
+<p>
+Here is the <i>toolkit</i> for Self Assembly Unit piece.  You can absolutely credit yourself as the composer (please see below for the correct way to do this) as you will be making compositional decisions as well as performing. This isn't my piece, it's yours. 
+</p>
+
+<p>
+Download Self Assembly Unit number 1
+Download Self Assembly Unit number 2, for trio
+Download Self Assembly Unit number 3, for choir  (any number of voices)
+Download Self Assembly Unit number 4, for percussion
+Download Self Assembly Unit number 5, for any instrumental combination, amplified instruments
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org1501c68"></a>What do you get?<br />
+<div class="outline-text-5" id="text-2-5-2-1">
+<p>
+Each piece contains a series of relationships which you are challenged with developing. One parameter per section is exposed.
+</p>
+</div>
+</li>
+
+<li><a id="orgce632d9"></a>Credits, authorship and license<br />
+<div class="outline-text-5" id="text-2-5-2-2">
+<p>
+This piece is available under Creative Commons Attribution license
+You may modify it.
+You may claim you composed it as well as performed it.
+You may work with as may other people as you like to make it.
+But you do need to credit me as the Designer/originator.
+</p>
+</div>
+</li>
+
+<li><a id="orgde431e6"></a>What to do next<br />
+<div class="outline-text-5" id="text-2-5-2-3">
+<p>
+If you'd like to perform one please tweet #selfassemblyunit and document your performance
+on youtube. Send me the link.
+</p>
+</div>
+</li>
+
+
+
+
+
+<li><a id="org1495a78"></a>Self Assembly Unit #1, Peyee Chen and James Woodrow<br />
+<div class="outline-text-5" id="text-2-5-2-4">
+<p>
+This is an example of what can be achieved.
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd3dd8c5" class="outline-3">
+<h3 id="orgd3dd8c5"><span class="section-number-3">2.6</span> IRCAM OM composers' book 3: process for matching notated composition to acoustic profiles.</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+2017 | Book Chapter
+</p>
+
+
+
+<div class="figure">
+<p><a href="om-book-3.png"><img src="om-book-3.png" alt="om-book-3.png" /></a>
+</p>
+</div>
+
+<p>
+Book Chapter: Field, A: <i>Composing for the resonance: finding new relationships between architecture and musical composition</i>
+</p>
+
+<p>
+This chapter documents research which led to the creation of the <i>Architexture Series</i> of vocal works. The article describes a set of techniques to show, on a stave, the effect of reverberation of the venue. A composition can be planned out to take account of the acoustic.
+</p>
+
+<p>
+The information displayed is not a visualisation of a single reverb time: it is spectrally dependent as regards time, making it possible to write for bass or soprano and know the exact effect, rather than a generic approximation, that texture might have.
+</p>
+
+<p>
+Doing this in audio would be no problem today. Although it is possible to apply the reverb trace of a real-world venue to audio signals recorded elsewhere unsing convolution techniques, there currently is no method for understanding how notated music will be affected by reverberation. A method for demonstrating the bluring that occurs within performance is proposed, which enabled me to design new acoustic music with the venue in mind in an informed way.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org353c7b7"></a>Publisher information<br />
+<div class="outline-text-5" id="text-2-6-0-1">
+<p>
+&gt; How to cite this article:
+</p>
+
+<p>
+&gt; Field, A, (2016). <i>Composing for the resonance: finding new relationships between architecture and musical composition</i> In: Bresson, J., Agon, C. and Assayag, G. (Eds.), The OM Composer's Book. (pp. 155-171). France: Editions Delatour/Ircam-Centre Pompidou. ISBN 978-2-7521-0283-6 
+</p>
+
+<p>
+Open access text available here:
+</p>
+</div>
+</li>
+
+
+
+
+
+
+<li><a id="orge20fe8f"></a>Abstract<br />
+<div class="outline-text-5" id="text-2-6-0-2">
+<p>
+This chapter documents my search for a new compositional method that could
+be informed by the acoustic response of the venue in which a piece is to be
+performed. Although composers have written pieces for particular spaces for
+centuries, this is traditionally a process informed by aural memory. I had two
+main aims: I wanted my work to have a tight bond between score and acoustic
+result, and I wanted to be able to design pieces where the acoustic
+contribution of a venue would be a known entity at composition time - rather
+than an after-effect of a performance. Both of these factors create new
+musical possibilities as they permit the space itself to become an integrated
+part of the composition. This body of work would not have been possible
+without OM, and the role of the system is explained with example patches
+demonstrating sound analysis, harmonic selection, rhythmic generation and
+texture manipulation.
+</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgde795fa" class="outline-3">
+<h3 id="orgde795fa"><span class="section-number-3">2.7</span> Transmission Cycle, for Tenor and Strings: 40 mins, large-scale work for Jazz.ro</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+{{&lt; soundcloud 145651175 &gt;}}
+</p>
+
+<p>
+40 minutes | String quartet and solo Tenor | 2014
+</p>
+
+
+<div class="figure">
+<p><a href="FIELD_jazz_in_church.jpg"><img src="FIELD_jazz_in_chruch.jpg" alt="FIELD_jazz_in_chruch.jpg" /></a>
+</p>
+</div>
+
+
+<p>
+<i>Transmission cycle</i> was commissioned by the Jazz.ro supported festival <i>Jazz in Church</i>, Bucharest. 
+</p>
+
+<p>
+An epic journey in sound, starting from simple premises, with melodic threads slowly unwinding unbroken over the course of 40 minutes. The piece is scored for amplifed string quartet and solo tenor. The string lines build slowly then fade in and out of focus, creating a shimmering haze of harmony above which the tenor line floats.  Fragments of text from Ovid's <i>Metamorphosis</i> are delivered as if they were part of a distant news broadcast.
+</p>
+
+<p>
+The premier, to a packed audience, was performed by: Mihai Balabas, violin; Marina Pingulescu, violin; Maria Coltatu, viola; Corina Ciuplea, cello. 
+</p>
+
+<p>
+"Along with the subtle sequencing of harmonies, the reflecting sound surfaces brought ebbing melodicism out in the generous space created by the recitative tenor line.. poignant"
+ADRIANA CARCU, <i>All about Jazz</i> review
+</p>
+
+<p>
+Transmission Cycle, and an interview, was broadcast on Romanian TV.
+</p>
+</div>
+
+<div id="outline-container-org259c12e" class="outline-4">
+<h4 id="org259c12e"><span class="section-number-4">2.7.1</span> Structure and Design considerations</h4>
+<div class="outline-text-4" id="text-2-7-1">
+<p>
+The piece represents the first large-scale work where I was specifically thinking about the effect the acoustic would have on the performance. Although this pre-dates pieces such as <i>Architexture I</i> for ten-part choir and <i>Quantaform Series</i> for solo flute which use measurement techniques to help bind the piece to the acoustic of the venue, <i>Transmission Cycle</i> leaves time and space for the acoustic to become a performer too, creating floating suspensions and drones whilst the musicians move on to other materials. Harmonically, the work also represented a pivotal moment: I was at this point testing my new thinking on <i>Designing Music as a Surface</i> where lines are sculpted out from larger blocks of material. During this work you can also hear the surroundings for these lines, as if they were silent actors in the performance through the gaps and spaces that are left behind. It's a kind of acoustic <i>subtractive synthesis</i> in this case.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgee14939" class="outline-3">
+<h3 id="orgee14939"><span class="section-number-3">2.8</span> Anagram for, tenor and electronics - Premier the Old Customs House, Tampere</h3>
+<div class="outline-text-3" id="text-2-8">
+<p>
+{{&lt; vimeo 26158788 &gt;}}
+&lt;sub&gt;&lt;sub&gt;
+with Film by Michael Lynch&lt;/sub&gt;&lt;/sub&gt;
+</p>
+
+<p>
+<i>Anagram</i> is a followup project to <i>Being Dufay</i> and premiered at the Old Customs House, Tempere vocal festival in 2013. The work explores different ways of using pre-existing text to that within <i>Being Dufay</i>, searching for what I'll term the <i>minimum trace</i>: what is just enough to make a link to a pre-existing work, yet not so much that the piece overtly <i>borrows</i> material.
+</p>
+
+<p>
+In <i>Being Dufay</i>, the approach to pre-existing music is to present it exactly as is, without hybridisation or attempts at cross-over. Editing is the sole compositional tool, and in the 50 minutes of the album, there is a sum-total of 6 minutes end-to-end Dufay. There are no substantive changes to the notes, or to the words. 
+</p>
+
+<p>
+In <i>Anagram</i> the text is from a song by Gombert. I wanted to capture something of Gombert's approach to polyphony where a unique line often sits above a swirling texture of intricately layered material. Towards the end of the piece, I'm trying a new version of an old vocoder effect. Vocoders have been around since the 1960s, enabling electronic textures to take on vocal qualities. What results, is a set of static harmonies based on the sounds being input. This version is a little different as it bends the <i>input sounds</i> towards the voice. 
+</p>
+</div>
+</div>
+<div id="outline-container-org9df282e" class="outline-3">
+<h3 id="org9df282e"><span class="section-number-3">2.9</span> Quantaform Series for Solo Flute in reverberant spaces&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Space_and_Music">Space_and_Music</span></span></h3>
+<div class="outline-text-3" id="text-2-9">
+<p>
+C Flute, 40 mins duration
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org639cadd"></a>Background and new 2019 Realisation<br />
+<div class="outline-text-5" id="text-2-9-0-1">
+<p>
+Quantform Series is an unusual 20 movement work for solo flute where each movement is precisely matched to the acoustics of the site in which it is to be performed. Each of the twenty movements is written to match a different acoustic space. The choice of which movements to perform, and in what order, is up to the performer.
+</p>
+
+<p>
+The pieces are tightly focused and short. Silence - and pauses in sound - play a significant part in this work as the reverberation from the venue is treated as if it were also a performer itself. The influence of the Japanese Shakuhachi (bamboo flute) is never far away. The performer must agilely create delicate overtone timbres and beautiful pitch-bends. 
+</p>
+
+<p>
+Quantaform Series calls for an extensive range of expressive control from the performer. Shaping the onsets of notes, the performer is ask to carefully control first few milliseconds of each sound to create distinctive 'envelope' patterns of attack and decay.
+</p>
+
+<p>
+Through this technique well-known to synthesiser performers of electronic music, time can be made to feel like it is flowing backwards (through reversed amplitude envelopes), and sound can take on beautiful feeling of sustain (through smoothing out the onsets).
+</p>
+
+<p>
+This process poses a considerable technical challenge to the performer, as these aspects of performance lie beyond articulating the notes and require a detailed concern for their micro-level shaping. Perhaps as a consequence, Quantaform Series has been taken-up as an finals examination work in Music Conservertoires (both in the UK and Europe) for graduate-level flautists.
+</p>
+
+<p>
+Virtuoso Jos Zwaanenburg first performed the cycle in 2013, and made a commercial recording of it on Sargasso (Sargasso: SCD-28071) - a contemporary music record label known for releases by Jonathan Harvey and Simon Emmerson. This recording used studio reverberation to re-create the performance environments to which the movements were linked. It is also possible to perform the work live this way, using an electronic reverberation unit (or pD/Max patch) and amplification. 
+</p>
+
+<p>
+However, the original intention for realisation of Quantaform Series was more challenging: to record each movement within an real (rather than simulated) acoustic space matching the required reverberation characteristics. This in practical terms is a complex process,as a performer would need to organise performances in up-to twenty different locations, creating a coherent bond between the acoustics of the site and the notes on the musical score.
+</p>
+
+<p>
+For the first time in 2019 this is made possible through a grant from the Arts Council National Lottery Heritage Fund. This enables the making of a film featuring exceptional Leeds-based flautist James Wilson. Through the support of Screen Yorkshire, James will perform in real-world locations from around Yorkshire, pitting flute against environment in an unusual and dramatic dialogue in locations ranging from urban powerstations to sweeping natural vistas. 
+</p>
+</div>
+</li>
+
+<li><a id="org3e08889"></a>Original realisation - Jos Zwaanenburg<br />
+<div class="outline-text-5" id="text-2-9-0-2">
+<p>
+{{&lt; vimeo 42241755 &gt;}}
+</p>
+
+<p>
+<i>I was intrigued to see how Jos Zwaanenburg would tackle award winning contemporary composer Ambrose Field's flute compositions. Divided into two different sections each deals with the flute in a different way.</i> 
+</p>
+
+<p>
+<a href="http://idwalfisher.blogspot.com/2013/09/">http://idwalfisher.blogspot.com/2013/09/</a>
+</p>
+
+<p>
+The project marks a significant strand of new thinking in my compositional process. I wanted to link the composition and performance process in new ways, in this case, by understanding the acoustic in which the performance could be made and working backwards from that to the composition of the notes on the page. Too much of Western composition, for me, is in the abstract - looking at a score conjures up a vision of a dislocated, 'ideal' performance where the acoustic contribution is visually absent. What if it were not? 
+</p>
+
+<p>
+I began to design notational tools which enabled me to 'see' what the music would look like in certain reverberant environments. What would a longer acoustic do to the sense of harmonic suspension - or what would performing outside, or in a forest mean for the types of textures that I might write. Composers have had the acoustic of the performance in mind for centuries, and indeed, many of the world's music spaces are specifically designed around the music written for them. I wanted though to be able to take this relationship to a new level, of accurate predicition, of really being able to treat the bond between piece and place as a highly specific. 
+</p>
+
+<p>
+In order to do this, it is necessary to look not just at the verberation time of a venue, but the spectral content within it and how that sound occupies three-dimensional space. (Please see the [Architexture Series]({{&lt;ref "archproject.md" &gt;}}) of works for further examples of this technique).
+</p>
+</div>
+</li>
+
+<li><a id="org1eb23c8"></a>Recording<br />
+<div class="outline-text-5" id="text-2-9-0-3">
+<p>
+Quantaform Series is recorded on Sargasso, SCD
+<a href="FIELD_quantaform_series.jpg"><img src="FIELD_quantaform_series.jpg" alt="FIELD_quantaform_series.jpg" /></a>
+</p>
+</div>
+</li>
+
+<li><a id="orgfff6956"></a>Score<br />
+<div class="outline-text-5" id="text-2-9-0-4">
+<p>
+A new edition of Quantaform Series is presently being prepared and will be out shortly. In the meantime, please contact me if you'd like to perform it and require the score.
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgcf055ad" class="outline-3">
+<h3 id="orgcf055ad"><span class="section-number-3">2.10</span> Pod Twoją Obronę, for 25 part choir</h3>
+<div class="outline-text-3" id="text-2-10">
+<p>
+Pod Twoją Obronę (2013) | for 25 solo voices | Recorded live in Gdansk, with Jan Łukaszewski conducting
+<a href="http://www.youtube.com/watch?feature=player_detailpage&amp;v=-eAPAleUSVw">http://www.youtube.com/watch?feature=player_detailpage&amp;v=-eAPAleUSVw</a>
+<a href="https://youtu.be/-eAPAleUSVw">https://youtu.be/-eAPAleUSVw</a>
+</p>
+
+<p>
+Pod Twoją Obronę was commissioned by the Polish National Chamber Choir <i>Polski Chor Kameralny</i> to mark the 80th birthday anniversary of composer Henryk Górecki. 
+</p>
+
+<p>
+It is set for 25 individual voices, one to a part.
+</p>
+
+<p>
+This work matches the large, resonant acoustics of the Kościół św. Katarzyny in Gdansk (in which the piece was performed) to the detailed part writing which occurs within the piece. Unlike the works in the [architexture series]({{&lt; ref "archproject.md" &gt;}}), which are written from an evidence base created through acoustic impulse-response analysis, <i>Pod Twoją Obronę</i> relies on straightforward dimensions and materials measurements of the venue (made remotely) to inform the rates at which textures overlap and momentary vocal clarity can be achieved.
+</p>
+
+<p>
+You can listen to the results of the live recording (taken from the premier of performance in Gdansk) in the video clip above. 
+</p>
+
+<p>
+Conducted by Jan Łukaszewski
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge0a9772" class="outline-3">
+<h3 id="orge0a9772"><span class="section-number-3">2.11</span> Summer 1971: Imperfect forms - Ken Kirschner Remixed</h3>
+<div class="outline-text-3" id="text-2-11">
+<p>
+{{&lt; bandcamp 1163390045 &gt;}}
+</p>
+</div>
+
+<div id="outline-container-org6778b86" class="outline-4">
+<h4 id="org6778b86"><span class="section-number-4">2.11.1</span> Imperfect Forms - The Music of Kenneth Kirschner Remixed</h4>
+<div class="outline-text-4" id="text-2-11-1">
+<p>
+I was invited to collaborate in the re-mixing of Ken Kirshner's beautiful music. But instead of remixing the work, I decided to intervene at an earlier stage and re-perform it prior to electronic manipulation.
+</p>
+
+<p>
+This work is an extract from a longer un-published set of pieces, <i>Kirschner Varations</i>. The work explores how borrowing (acknowledged, and with permission) from a living composer might feel. Part of the problem of <i>Being Dufay</i> was that it wasn't possible to ask Dufay what he thought. Ken Kirschner, on the other hand, was able to input and kindly permitted the re-use of his piece (PIECE TITLE). 
+</p>
+
+<p>
+Rather than re-using the original piano material as recorded audio, I transcribed and re-performed it on the piano using small loundspeakers mounted inside the piano on the soundboard. Environmental sounds were played through these speakers influencing the colour of the notes and sustains. I wanted to create a dreamy atmosphere with a tint of sonic nostalgia. Reprocessing of the recorded audio was accomplished using the Kyma Sound Design workstation (Kyma/Capybara). This particular track is one of the more highly processed, leaving little trace of the original recordings as the soundscape here is distilled to just the essential elements. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org33eae36" class="outline-3">
+<h3 id="org33eae36"><span class="section-number-3">2.12</span> Frozen Voyagers, electroacoustic sounds, high-order ambisonics spatial audio</h3>
+<div class="outline-text-3" id="text-2-12">
+<p>
+<i>Frozen Voyagers</i> premiered at the MUTEK festival, Canada in 2014 in  <i>cinechamber</i> : a spectacular 360 degree surround audio and video auditorium curated by Naut Humon from Recombinant Media Labs. The piece is designed to maximise the spatial qualities of the venue and sound projection system. I'm aiming to try and capture a sense of 'frozen time' through the huge amount of swirling audio activity: standing within this sonic vortex might be a little like being in the eye of the storm: stillness and extreme motion at the same time.
+</p>
+
+<p>
+To create an unusual immersive sound spatialisation, I chose a dual-technique approach on this piece. Third order ambisonics helped to generate a sense of defined locations for sounds which needed to be easy to locate. This was combined with first-order ambisonics, chosen to  create a sense of diffuse, seemless ambience. Each technique has its own merits: the more technically 'precise' system of higer order ambisonics is not necessairly musically more useful than first order. As Ambisonics is backwards compatible, it is  straightforward to mix first order techniques and more advanced methods.
+</p>
+
+<p>
+The sonic material of piece itself dates from a period of work at Recombinant Media Labs' San Francisco facility in 2006. Here, I installed myself in the 'synth room' at any possible opportunity, being able to use modular surge.
+</p>
+
+<p>
+The piece is available as a ten channel version.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org883c558" class="outline-3">
+<h3 id="org883c558"><span class="section-number-3">2.13</span> Being Dufay</h3>
+<div class="outline-text-3" id="text-2-13">
+</div>
+</div>
+
+<div id="outline-container-org267ddd0" class="outline-3">
+<h3 id="org267ddd0"><span class="section-number-3">2.14</span> ----------------&#x2013;&#x2014; got to here -------</h3>
+</div>
+<div id="outline-container-org5855165" class="outline-3">
+<h3 id="org5855165"><span class="section-number-3">2.15</span> Janet Lightpath remix (necessary?)</h3>
+</div>
+</div>
+
+<div id="outline-container-org22fc5a5" class="outline-2">
+<h2 id="org22fc5a5"><span class="section-number-2">3</span> About</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org24f72bd" class="outline-3">
+<h3 id="org24f72bd"><span class="section-number-3">3.1</span> Ambrose Field</h3>
+<div class="outline-text-3" id="text-3-1">
+
+<div class="figure">
+<p><img src="AMBROSE_FIELD_crop.jpg" alt="AMBROSE_FIELD_crop.jpg" />
+</p>
+</div>
+
+<p>
+<b>Ambrose Field</b>'s music has been described as "Mesmerising and
+beautiful" by ClassicFM magazine, featuring "Interlocking tonal
+nuances of fragile beauty, without equal" by JazzEcho.de and
+"Completely Compelling" by BBC Music. His pieces combine huge, lush
+harmonic soundscapes with a focused, contemporary aesthetic. Field's
+work has been performed in venues including The Vienna Konzerthaus,
+Parco Della Musica, Rome, The Chicago Early Music Festival, Perth
+Festival, Australia, Dancity Festival, Italy and the Los Angeles
+Convention Centre. He has been a resident composer at Hungarian
+National Radio (supported by UNESCO), Recombinant Media Labs San
+Francisco, and the Banff Centre for Arts and Creativity, Canada. His
+album <i>Being Dufay</i>, is recorded on ECM records (ECM 2071) and is
+distributed by Universal. It toured to 13 nations as a live
+performance. 
+</p>
+
+<p>
+Field writes for instruments, choirs, and electronic
+media. His music has been commissioned widely for concert performance
+and for media applications. The large-scale vocal piece <i>Pod Twoją
+obronę</i> (25 voices, one-to-a-part) for the Polish National Chamber
+Choir Polski Chor Kameralny is a monolithic vocal soundscape of
+sculptural proportions and was specifically commissioned to honour the
+80th Birthday Anniversary of notable Polish composer H. M. Górecki .
+For his work with technology, he is a three-time recipient of the
+honorary award at the Prix Ars Electronica, Linz, and has received
+international performances including in the RML Cinechamber at MUTEK,
+Canada, 2014. Interdisciplinary creative questions underpin his
+output. Field's series of architecturally informed compositions
+<i>Architexture</i> make use of specific acoustics of a site to inform how
+a score is crafted. The technically challenging cycle of pieces for
+solo flute <i>Quantaform Series</i>, which re-thinks the relationship
+between performer and environment, is to be the subject of a new film
+made with support of the Arts Council UK and National Lottery Heritage
+Fund (2019). He has collaborated with researchers in other disciplines
+(sculpture, health science, education, heritage), worked as industrial
+consultant to media companies and technology firms, acted as
+investigator and co-investigator on research grants, and served as a
+jury member for national and international composition competitions.
+</p>
+
+<p>
+Ambrose is presently Head of Department of Music at the University of
+York, UK. He was interim Dean of Arts and Humanities in 2019-19, and
+was appointed to Honorary Professorships at the Beijing Institute for
+Advanced Innovation, and China National School of Music, China
+Conservatory in 2018.
+</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgb6afdbe" class="outline-2">
+<h2 id="orgb6afdbe"><span class="section-number-2">4</span> Posts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org9a0e9dc" class="outline-3">
+<h3 id="org9a0e9dc"><span class="section-number-3">4.1</span> Landing text for posts</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+This is the landing text for the posts menu.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaa17bfe" class="outline-3">
+<h3 id="orgaa17bfe"><span class="section-number-3">4.2</span> <span class="todo TODO">TODO</span> First Post topic here&#xa0;&#xa0;&#xa0;<span class="tag"><span class="_my_topic_tag">@my_topic_tag</span></span></h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+This is the text for the first draft. It's getting longer all the time.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0df5bf0" class="outline-3">
+<h3 id="org0df5bf0"><span class="section-number-3">4.3</span> <span class="todo TODO">TODO</span> Second post topic here&#xa0;&#xa0;&#xa0;<span class="tag"><span class="_my_topic_tag">@my_topic_tag</span></span></h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+</div>
+<div id="outline-container-orgbd43d3f" class="outline-3">
+<h3 id="orgbd43d3f"><span class="section-number-3">4.4</span> <span class="todo TODO">TODO</span> Third topic here, but this is done&#xa0;&#xa0;&#xa0;<span class="tag"><span class="_topic3">@topic3</span></span></h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+This is the third topic, but it is done.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Ambrose Field</p>
+<p class="date">Created: 2019-05-31 Fri 20:37</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

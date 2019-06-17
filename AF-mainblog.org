@@ -1,0 +1,901 @@
+#+STARTUP: content
+#+AUTHOR: Ambrose Field
+#+HUGO_BASE_DIR: .
+#+HUGO_AUTO_SET_LASTMOD: 
+* instructions :noexport:
+#  ----------------------------------------------
+#  AF Website blog
+#
+#  ----------------------------------------------
+
+# ----------------------------------------------
+# C-C C-X p  gets the property draw out.
+#
+# Dont't forget everything needs an EXPLORT_FILE_NAME property in the draw
+# regardless of post or page. Might want to setup a template to deal with this.
+#
+# If you change the EXPLORT_FILE_NAME_and not the post title, it will still
+# appear and won't get deleted.
+#
+# the directory is  content/posts/  
+# 
+# -----------------------------------------
+#
+#
+# C-C E H A  rebuilds the whole thing
+#
+* System - server, browser :noexport:
+# start server. To stop the server, to C-x k to kill the server buffer
+# to export the local tree C-e,HO  or C-e, HA
+[[shell: cd C:\Users\ambro\Dropbox\06_web\sites_master\blog & hugo server &][start hugo yserver]]
+
+[[http://localhost:1313/][open web browser on local file]]
+* System - directories etc :noexport:
+# directories
+[[file:C:\Users\ambro\Dropbox\06_web\sites_master\blog\content\posts][filemanager: directory for development of posts]]
+[[file:C:\Users\ambro\Dropbox\06_web\sites_master][filemanager:sites mater directory - open here for new posts, etc]]
+[[file:C:\Users\ambro\Dropbox\06_web\sites_master\blog\static\img][filemanager: images directory]]
+images can be optimised with the caesium image compressor tool
+
+# creating a new post, use: hugo new posts/blah.md in powershell link below
+[[shell: cd C:\Users\ambro\Dropbox\06_web\sites_master\blog & powershell &][open powersrehell]]
+hugo new posts/whatevermd
+
+# select post to edit in emacs
+[[file+emacs:C:\Users\ambro\Dropbox\06_web\sites_master\blog\content\posts][open dired on posts directory]]
+[[file+emacs:C:\Users\ambro\Dropbox\06_web\sites_master\blog][open dired on blog directory, e.g, to edit config file]]
+a
+* Notes - Markdown  reference :noexport:
+# things to know, using ox-hugo
+how to construct links in this document
+how to do mail to
+
+# -- write the post in mark down
+# -- links
+[like this](http://someurl "this title shows up when you hover")
+
+internal links to other pages
+[Test link text]({{< ref "architexture1.md" >}})
+
+
+links to section pages - make sure case is right for the actual file, not the heading in org
+[Link Title Here](/pages)
+
+
+# emphasis
+*this is italic*
+**this is bold**
+
+# lists
+asterisk on its own starts an unorded list (not here, it is org)
+
+# tables are pipes and dashes
+ first heading | second heading
+ -----------------| -------------
+content | other content
+content | other content
+
+# headers
+This is a huge header
+=====
+
+this is a smaller header
+----------
+
+# horizontal rule
+there or more --- on a line
+-----
+
+# images
+![alternate text](https://sourceforge.net/images/icon_linux.gif "hover over title")
+
+# text size use <sub><sup> blah </sub></sup>
+<sub><sup>Small text</sup></sub>
+<sub><sup><sub><sup>Tiny text</sup></sub></sup></sub>
+
+# carriage return, linebreak
+<br>
+
+
+#------------------------------------------------------------------------------------------------------------
+
+# progress
+
+at the moment, there is no change to the front page
+content is within the posts section.
+the actual blog directory holds writing text as above.
+
+# this kind of thing goes in the markdown files as headers
+# does youtube links
+#
+---
+title: "Title of the page"
+date: 2018-06-28T12:03:29+01:00
+draft: false
+---
+### This is the title
+![Megumi Masaki](/img/megumi1.jpg)
+{{< youtube id="e2-Ndzyv6K0" >}}
+# 
+
+* Notes - Todos and issues :noexport:
+- [ ] Universal's copy of being dufay will need a custom shortcode. Check it loads with one.
+- [ ] Theme Cathode comes with one [[https://github.com/siawyoung/cathode][here]]
+- [ ] some kind of icon for spotify on the page
+- [X] Find out about images in the main directory
+- [ ] Check shortcodes for soundcloud material
+- [ ] upload video for self-assembly unit
+- [ ] edit video for soundslikethis sammy chien
+- [ ] provide bibtex records eventually for academics
+- [ ] more photos of ECM events somehow
+- [ ] still lacking a proper bio photo - where is the headshot from Richard
+
+* ----- Sections active blog ---- :noexport:
+# Music - Listening, Pages - Research, Posts - Blog
+
+* Music
+  :PROPERTIES:
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+  :EXPORT_HUGO_MENU: :menu main
+  :EXPORT_HUGO_SECTION: Music
+  :EXPORT_HUGO_WEIGHT: auto
+  :END:
+** Ambrose Field
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:END:
+*** Featured Composition
+***** Architexture I
+{{< youtube id="OksbYjYq9bg" >}}
+***** Pod Twoją Obronę: in memoriam Górecki.
+{{< youtube id="-eAPAleUSVw" >}}
+***** Anagram for tenor and electronics
+{{< vimeo 26158788 >}}
+*** Albums
+***** Being Dufay on Spotify
+{{< afspota >}}
+<br>
+[[https://www.ecmrecords.com/catalogue/143038752593/ambrose-field-being-dufay-john-potter][ECM]]
+<br>ECM Records 2071 <br>
+Tenor voice and electronics (48 mins)
+<br><br>
+[[https://youtu.be/2KjJkG4j8DU][Being Dufay on Youtube]] Music <br>
+Universal do not permit embedding of videos, so please follow the link.<br>
+<br>
+
+# [[file:dufay600.jpg]]
+* Research
+  :PROPERTIES:
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+  :EXPORT_HUGO_MENU: :menu main
+  :EXPORT_HUGO_SECTION: research
+  :EXPORT_HUGO_WEIGHT: auto
+  :END:
+
+These pages are an experiment in documenting the thinking and research carried out behind my compositions. Let me know if you like this.
+
+** Architexture Series: evidence-based, bespoke architectually linked compositions.
+  :PROPERTIES:
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+  :EXPORT_HUGO_MENU: :menu main
+  :EXPORT_HUGO_SECTION: research
+  :EXPORT_HUGO_WEIGHT: auto
+:EXPORT_FILE_NAME: archproject
+  :END:
+
+*** The Architexture Series Musicc
+
+The /Architexture Series/ of works makes use of the sonic profile of buildings as an evidence base for musical composition. 
+
+Detailed links between the musical score and the unique spatial and acoustic characteristics of the performance site are embedded within these compositions. Modelling the acoustic in this way during the musical composition process can help achieve a closer bond between the notes on the page and the sound perceived by listeners. The purpose of this project is to blur the lines between space, live-art and performance by allowing the situated built environment to become an essential part of a living and evolving musical construction process. 
+
+Traditionally, composers for centuries have anticipated how spaces are appropriate for the music they write, and acoustic music generally reflects the constraints of performance acoustics it was intended for. In the /Architexture Series/ the resonant sounds created by buildings in response to the perfromance are not left to chance. Instead, the whole system of performers, space, and musical score is treated as a sound-making environment which can be designed for. This work builds on traditional ideas of writing music for a particular space but re-thinks some of the inherent relationships involved. It attempts to use the space itself as a live sonic performer within an ensemble - an active contributor to an unfolding composition - rather than as a static 'effect'. Through designing structured ways to provoke reverberation, to blur certain harmonies and not others, to respond to particular spatial locations and not others, opens up new compositional possibilities. This is only possible through detailed acoustical analysis and a composition process which makes use of this information as an evidence-base for sculpting lines and harmonies.
+
+The /Architexture Series/ presently comprises three explorations into this area through addressing the layering of past and present within a heritage building (The Guildhall, York), a large-scale openair public Augmented Reality Presentation (European researcher's night), and a spatially recorded piece of audio under controlled studio conditions.New relationships between audience, the performance site and the performers emerge from these bespoke pieces of music for voices. /Architexture I/ and /Architexture 2/ both draw on a combination of Renaissance influenced musical craft and spatial data provided through contemporary digital techniques. 
+
+[[file:ambrosefield_architexture_header1.jpg]]
+<sub><sup><sub>Images: Ian Martindale</sup></sub></sup>
+
+*** Sites, resonances, and history
+
+Reverberation has always been attractive to me as a composer: the joy of hearing performances where a buildings make a unique contribution to the event is a thrilling experience. However, I started to wonder about how composers might further design the effects the building was producing alongside designing the musical score itself. . Setting aside famous examples such as Gabrielli, many composers tend to think about the acoustic in every aspect of the music they make, looking for clarity of presentation or whether certain textures will simply 'work' in a space. The environment has an imprint on the types and styles of music what we create. I wanted to take this idea a little further, and explore how the sounds of the performance site could be generated and manipulated by the ensemble: building an ensemble as a unified system, working together and challenging the concept of a performance in, or for, a space. Alvin Lucier's piece, /I am sitting in a room/ plays back a room's particular resonance into itself, converting the resonance to a sound source in its own right. There are no other sound sources in Lucier's piece, nor are there any performers. I wanted to harness this now familiar relationship (the idea of 'room tone', as film makers would put it) and take it to a new level: what happens when that resonance itself is manipulated by the performance. To do this required knowing about the detailed acoustic response of venues in advance of composing, and the construction of a computer modelling system so that the notated results of the musical composition could be visualised as harmony with a detailed reverberation profile of the building factored in. My method for doing this is discussed in a research chapter in [this publication]({{<ref "CompResonance.md" >}}). With these tools, when it came to putting notes on the page I could understand the effects and contribution the building would make to the totality of the sounding experience the audience would be immersed within. 
+# check sitting in a room details. This is all a bit long. Could be a read more section.
+
+*** Composition, Live-Art and Augmented Reality (AR).
+
+[[file:ambrosefield_architexture_performance.jpg][file:ambrosefield_architexture_performance.jpg]]
+
+It would be relatively straightforward to map reverberant data points as a kind of sonification. (Sonification doesn't rule out musicality - it is just a different type of process). Instead,  data here in the Architexture Series informs a process where the music I write for performers is shaped and moulded appropriately, treating the reverberation as a line or part in its own right in what is already a dynamic,complex system of interactions. This creates a piece of /live-art/: the existing building having it's role changed and adapted by the music.
+
+In /Architexture II/, we worked with a building that doesn't presently exist today through reconstruction and modelling of that space, brought alive by music which specifically uses those spatial characteristics, presented as an audio Augmented Reality. See the  [Architexture II page]({{<ref "architexture2.md" >}}) for details.
+
+*** Multi-disciplinary collaboration
+Architexture is a multi-disciplinary project which would not be possible without arts-science collaboration, made possible at the University of York, UK. Often, Art is used as a demonstrator or engagement tool for science, but in this case, acoustic engineering (here in the form of the capture of impulse responses) is a key enabler in creating new forms of immersive public experience through musical craft. Through new music designed to explore site in new ways (rather than through the performance of existing work), creating a situation where the audience are less observers and more participants. The overlay of space and place allows us to think critically about the sites, buildings and the communities which make (or have made) use of them.
+
+[[file:ambisonics-architexture.jpg][file:ambisonics-architexture.jpg]]
+
+*** Meet the team
+Ambrose Field and Jude Brereton, project leads<br>
+Jude Brereton, Helena Daffern | acoustic engineering research<br>
+Paul Gameson | Conductor, Ebor Singers<br>
+The Ebor Singers | Ensemble<br>
+Ambrose Field | Musical composition, acoustic mapping<br>
+
+The Architexture II performance was made possible through the work of:
+
+Steven Oxnard | St Mary's Impulse Response Model and Calculation<br>
+Ameila Gully | Acoustics<br>
+Lewis Thresh | Processing Graphics<br>
+Thmoas Krauss | Light<br>
+Ian Martindale | Photography<br>
+Radek Rudnicki | Event Video<br>
+Damian Murphy | Acoustics Engineering <br>
+Andrew Chadwick | Ambisonics and Live Sound<br>
+Ben Pugh | Event Management<br>
+
+*** Publications about project
+Book chapters:
+
+Field A. (2016) /Composing for the Resonance/. Open Music Composer’s Book Vol. 3. Jean Bresson, Gérard Assayag, and Carlos Agon, eds. Paris: Editions Delatour, IRCAM. 
+
+Brereton, J. (2017) /Music perception and performance in virtual acoustic spaces/. Body, Sound and Space in Music and Beyond: Multimodal Explorations. Wöllner, C. (ed.). Routledge.
+
+Related Articles:
+
+Murphy, D. T., Shelley, S. B., Foteinou, A., Brereton, J. S. & Daffern, H. (2017), /Acoustic Heritage and Audio Creativity: the Creative Application of Sound in the Representation, Understanding and Experience of Past Environments/. Special issue in Internet Archaeology.
+
+Presentations:
+ 
+Field, A. (2016) /Sound in space/ - Research colloquia, HKBU, HongKong, Sept 2016.
+
+Field, A.: (2017) /Reverse Spectralism: designing for the acoustic/, University of Oxford, Spectralisms Conference, March 16/17, 2017.
+
+Field, A., Brereton J.,(2015): /Architexture II Realisation/, European Researchers' night, York, Sept 25th, 2015 
+
+Initial work was presented by Field and Brereton at /Sounds in Space/ Symposium, University of Derby, 2014.
+
+*** Bringing contemporary perspectives to historical architecture
+
+The architexture project has involved creating bespoke music for sites of historic, cultural and acoustic interest. In the heritage context, we have rejected ideas of providing a kind of 'audio time travel' (or taking the audience back to a particular period in time) in favour of creating a situation where the public can experience the past and present together in a unified way through immersive music - inviting thoughtful engagement through personal comparison between past and present.
+
+*** Listen
+Further explore the Architexture Series here:
+
+[Architexture I]({{< ref "architexture1.md" >}}) <br>
+[Architexture II]({{< ref "architexture2.md" >}}) <br>
+
+Architexture III is presently in production.
+
+related work: <br>
+[Pod Twoja Obrne]({{< ref "podtwoja.md" >}}) <br>for 25 part choir.
+
+# would be good at some point to have a how to cite this project
+
+*** Commissioning for your venue
+
+The architexture team produce exciting new musical work which engages with ensembles, heritage and communities. If you would like to explore working with us we'd be happy to hear from you.
+
+# requires contact form
+
+** Architexture I, for 10 part choir
+:PROPERTIES:
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+:EXPORT_HUGO_MENU: :menu main
+:EXPORT_HUGO_SECTION: research
+:EXPORT_HUGO_WEIGHT: auto
+:CUSTOM_ID: archone
+:EXPORT_FILE_NAME: architexture1
+:END:
+
+18 mins |  2012 |  10-part Choir (SSAATTBarBarBB)
+
+{{< youtube id="OksbYjYq9bg" >}}
+*** About the composition
+
+_Architexture I_ is a choral music work in which the acoustic of the performance venue is designed into the substance of the music itself. This is done through the use of three-dimensional acoustic analysis techniques to inform a traditional “pen and paper” composition process. The harmony, the speed of vocal entries, and the way they overlap each other in time, are sculpted with knowledge of the architectural acoustics of the space. Specific chords linger in the air, resulting in a beautiful unity of space and notes. Pieces in the architexture series are designed specifically for a particular choir and venue. The musical language is a richly harmonic one, exploiting the author's 'extensible polyphony' technique to achieve clarity within dense, overlapping vocal textures.
+
+Architexture I is scored for 10 part choir (S,S,A,A,T,T,Ba,Ba,B,B one-to-a-part) lasting 18 minutes duration. 
+
+The piece as recorded above is configured for the acoustic of the Guildhall, a heritage building in York, UK. If you would like to present a new version of this piece which fully exploit the acoustic your venue for any number of performers, I would be happy to hear from you.
+
+See [this description]({{< ref "archproject.md" >}}) of the architexture project itself for more information.
+
+** Architexture II, for 6 part choir :@AR:@acoustics:@heritage:@liveart:
+  :PROPERTIES:
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+  :EXPORT_HUGO_MENU: :menu main
+  :EXPORT_HUGO_SECTION: research
+  :EXPORT_HUGO_WEIGHT: auto
+:EXPORT_FILE_NAME: architexture2
+  :END:
+ 20 mins |  2015 |  6-part Choir (SSAATB)
+
+Architexture II was composed for a public augmented reality
+experience. Over 600 people attended the premier at St. Mary's York,
+where we re-constructed the acoustic St Mary's would have had were it
+still standing, and performed Architexture II - a vocal work
+specifically designed to provide an immersive and accurate interaction
+with with the re-created space.
+
+See [this description]({{< ref "archproject.md" >}}) of the architexture project itself for more information.
+
+[[file:ambrosefield_architexturegig.jpg][file:ambrosefield_architexturegig.jpg]]
+
+{{< youtube id="KZWeDSgkPDg" >}}
+
+**** Musical Construction
+
+Architexture II, a 20 minute vocal work for six part choir  exploits the specific architectural acoustics characteristics of a heritage building which is no longer present today. As this is new music, and not a 'historical re-construction', it is possible to bring the public experience closer to the reality of the past in new ways: the composition Architexture II is designed to closely match /this/ physical site. If we had selected generic repertoire from the same period to perform within a simulated acoustic, it would not be possible to fully /know/ that the works really had a tight relationship with the exact building with which we were working, or indeed how choral directors of the day would have articulated them due to the limitations of written documentary evidence from the period and the issue that authentic performance scholarship whilst a valuable resource can not fully capture the actual sounding experience of interacting with a particular space from this period on a detailed and nuanced level. A powerful case for new composition for heritage applications emerges as these relationships can be constructed from the present day in order to present a more rigorously evidenced view of the past.
+
+#+hugo: more
+**** Spatial Re-construction
+
+The previous section has outlined how new music was constructured to match the acoustic measurements of a historic building. The performance itself was placed in that space using applied audio engineering techniques as follows. 
+
+From site measurements and historical architectural materials data, it is possible to construct an impulse response of a venue using commercial available architectural acoustics software, such as [[https://odeon.dk/][Odeon]]. The acoustics team used an impulse response generated by Stephen Oxnard, of the Department of Electronics University of York, as the starting point for an ambisonics realisation. This data is available on the OpenAIR lib impulse response archive site. You can download this impulse response and apply it to your own recorded media from 
+
+# BROKEN LINK
+
+# [[ http://www.openairlib.net/auralizationdb/content/st-marys-abbey-reconstruction][here]]
+
+In a team lead by Dr Jude Brereton, Live procesing was applied in a straightforward manner to each singer's microphone via convolution - running the [[http://www.reaper.fm][REAPER]] audio production worksation as a live tool, then decoded through an ambisonics loudspeaker array to give the audience a spatially relevant presentation of the music. Given that the music and acoustic are not separate entities in this performance, care was taken to make sure the live sound (including reflections from the existing building) were appropriate to the demands of the score.  
+
+# photo of site
+[[file:st-marys-site.jpg][file:st-marys-site.jpg]]
+St. Mary's as it stands today.
+
+** Frozen Reflection, Sleeping Buffalo: Piano and mechanical resonators
+:PROPERTIES:
+:EXPORT_FILE_NAME: FrozenReflection
+:END:
+ 19 mins |  2017 |  Piano Solo
+[[file:megumi1.jpg][file:megumi1.jpg]]
+/Megumi Masaki/
+
+*** About the work
+/Frozen Reflection, Sleeping Buffalo/ uses EBows - electromechanical resonating devices, not as drones in their own right, but to provoke delaicate and unusual timbres from sustained piano chords. The EBows continually vibrate a string as if it had infinate sustain (and are often used by guitarists for this purpose). The piano pedal in this work forms a kind of 'envelope' control, opening up and closing down this resonance. The sounds made by the EBows modlate the chords played by the pianist, creating a shimmering haze of harmonics. The drone itself blends into the background, creating a kind of horizon in the sound landscape around which everything else circulates.
+
+[[file:ebows-on-stringsP.jpg][file:ebows-on-stringsP.jpg]]
+/ebow positioning on piano strings/
+
+*** Arctic cold
+
+It's late December. Air from the Arctic drifts slowly over Alberta, and temperatures reach a chilling minus 30 degrees Celsius. /Frozen Reflection Sleeping Buffalo/ is inspired by the First Nations Legend of Sleeping Buffalo. The piece stems from a period working as an artist at the Banff Centre for the Arts and Innovation, Canada, in Dec 2016. My project at the time was to work on a large-scale orchestral commission. However, whilst doing so I discovered a design method which could combine fixed external resonances with my own choice of colours.  
+
+*** Ebow sounds
+The Ebows produce a kind of etherial constant drone sound, but
+interestingly, also /modulate/ the decay of the other sounds. You can
+hear a shimmering quality to the sustains as a result of this aural
+effect. After realising this, I decided to compose these effects into
+the piece by finding harmonies and textures which would provoke them.
+
+Using EBows on the piano can be a challenge, as other composers have
+found. The strings to be a low-tension enough to be able to vibrate by
+the effects of a magnetic field, yet not so thick that they are too
+heavy to move. This limits the range over which you can place them on
+the piano. The results are slightly different for different pianos too.
+After much experimentation, I settled on a range of C4 - REFERENCE.
+
+*** Musical structure
+I've been working with on idea of designing a /musical surface/, rather
+than accepting a 'surface' (here taken to mean the totality of the
+sounding result) as a consequence of other design processes. Composing
+this way is a bit like sculpting a large block of granite in order to
+unconvering the form. It's subtractive. In this music, different parts
+of the surface fades in and out of focus over time. Harmonic centres of
+importance are spread over the piece so that they become exposed and
+then gradually subside throughout the piece. Here's a visualisation:
+
+[[file:froz_ref_density.png][file:froz_ref_density.png]]
+
+*** Organisation
+/Frozen Reflection Sleeping Buffalo/ has two sections. In the first,
+small, isolated moments are set against a continuity of delicate drones
+provided by the Ebows. Tiny changes in the resonance of the decay occur
+as the ebow drones interfere with the other pitches to produce
+modulation artefacts. In order to design these more carefully than in my
+initial experiements, I needed to model these acoustic effects in Open
+Music (see below).
+
+The second section is a reversal, or reflection of the first in almost
+every way. Instead of building harmony on top of drone-like resonances
+as previously, I wanted to gradually fill out the negative-space around
+the drone-sounds is inverted with dense, angular chromatic writing.
+
+The piano chords appear to take on a transparent, shimmering quality
+during these silences-in-sound.
+
+*** Watch the video
+
+{{< youtube id="e2-Ndzyv6K0" >}} /Listen quietly, with headphones/
+
+*** Tunnel Mountain
+In the First Nations legend Tunnel mountain is a sacred place. It is a place where people come to share knowledge and
+discover new bonds to their surroundings and culture. Then they leave.
+
+*** Score download
+
+The score can be downloaded from [[https://github.com/ambrosefield/FIELD_Frozen_Reflection_Sleeping_Buffalo_Piano][here]]
+
+My scores are now hosted as open-source publications on GitHub: this enables the current version published to reflect the current edition of the work. You can also suggest changes (contact me for advice on how to do this) and have your changes merged back into the main document for others to download should you so wish. Information merged back into the project can include performance notes, annotations or suggestions.
+
+
+
+** Self-Assembly Unit Series: rethinking score design as reproducable research
+:PROPERTIES:
+:EXPORT_FILE_NAME: SAunit
+:END:
+2019 | Scores for a rehearsal process
+*** Information
+A series of pieces where the musicians structure an off-line
+design process themselves. The score describes these activities, rather than a performance.
+
+[[file:sa-unit3.jpg][file:sa-unit3.jpg]]
+
+> The performers credit themselves as composers for these pieces under a creative commons license.
+
+**** Scoring the rehearsal process, not the performance
+The purpose of this work is to investigate what a score for a 'rehearsal process' might be (rather than a score aimed at a 'realisation' of a 'performance'.) A parametric, modular score is given where musicans are encouraged to think about the /workflow of a design process/, rather than to generate sound in a responsive manner to visual stiumuli.
+
+Whilst plenty of scores from Medieval Music to Open Form composition address the challenges of creatively empowering performers, few address the actual rehearsal process itself: the /when/ and /why/ of collaborative decision making /whilst in the act of assembling a piece/. /Self-Assembly Unit/ series of pieces explores these questions.
+
+[[file:sa-unit4.jpg][file:sa-unit4.jpg]]
+
+**** on timelines and improvisation
+
+Timelines are often seen as restrictive by improvisors, and graphic score, whilst open-ended, still offers the possibility that the interpretation of even the most abstract visuals will be measured against the works previously made by a particular composer, or failing that, within a broader tradition to which the graphics might be perceived to belong. I wanted to reject both of these notions, by turing over the timeline construction as an explicit and defined process to the musicians, in such a way that the process of assembly here has both real-time, and /off-line/ elements to it.
+
+**** Modular score
+
+Self-Assembly Unit Series is inspired by authorship debates and flatpack furniture. Self-Assembly Unit is a series of modular works which include the basic ingredients from which a piece might be rehearsed. 
+
+**** Reproducable research
+
+In research, reproducable-research means that it is possible to inspect the working (generally: code, raw data, processing methods) behind the conclusions presented. I wanted to expose the 'internals' of a composition process to performers, and structure /how/ the assembly of elements is made. To do this, all the internal elements that go into /the process of/ making up a piece are exposed to the musicians, for change and modification. This is a different way of working to, for example, improvising around a stimulus, as longer-term structural decision making is required to define a collaborative sequence of events. /Self Assembly Unit/ is a score for the /workflow/ of assembly.
+
+**** Do I call you performers or composers?
+
+ /Self assembly unit/ makes no assumptions about a performance occurring from the score in real-time: there is no sense of 'realisation' (in a performative sense) here. Instead, design relationships are suggested around which the performer can generate a complex web of materials. This score then is entirely off-line and non-realtime. It also has nothing to do with the /act/ of performance either, although it prepares the way for this. If you are /musicians/ - a term encompassing performers and composers, then what am I? I'm happy with the idea of being /desginer/ for this piece. I've set the overall parameters, but the workflow of creativity is up to you.
+
+*** Self Assembly Unit - Downloadable Toolkit
+
+The Self Assembly Toolkit is in preparation, for release later this year. 
+
+
+** IRCAM OM composers' book 3: process for matching notated composition to acoustic profiles.
+:PROPERTIES:
+:EXPORT_FILE_NAME: CompResonance
+:END:
+2017 | Book Chapter
+
+
+[[file:om-book-3.png][file:om-book-3.png]]
+
+Book Chapter: Field, A: /Composing for the resonance: finding new relationships between architecture and musical composition/
+
+This chapter documents research which led to the creation of the /Architexture Series/ of vocal works. The article describes a set of techniques to show, on a stave, the effect of reverberation of the venue. A composition can be planned out to take account of the acoustic.
+
+The information displayed is not a visualisation of a single reverb time: it is spectrally dependent as regards time, making it possible to write for bass or soprano and know the exact effect, rather than a generic approximation, that texture might have.
+
+Doing this in audio would be no problem today. Although it is possible to apply the reverb trace of a real-world venue to audio signals recorded elsewhere unsing convolution techniques, there currently is no method for understanding how notated music will be affected by reverberation. A method for demonstrating the bluring that occurs within performance is proposed, which enabled me to design new acoustic music with the venue in mind in an informed way.
+
+**** Publisher information
+
+> How to cite this article:
+
+> Field, A, (2016). /Composing for the resonance: finding new relationships between architecture and musical composition/ In: Bresson, J., Agon, C. and Assayag, G. (Eds.), The OM Composer's Book. (pp. 155-171). France: Editions Delatour/Ircam-Centre Pompidou. ISBN 978-2-7521-0283-6 
+
+Open access text available shortly.
+**** Abstract
+
+This chapter documents my search for a new compositional method that could
+be informed by the acoustic response of the venue in which a piece is to be
+performed. Although composers have written pieces for particular spaces for
+centuries, this is traditionally a process informed by aural memory. I had two
+main aims: I wanted my work to have a tight bond between score and acoustic
+result, and I wanted to be able to design pieces where the acoustic
+contribution of a venue would be a known entity at composition time - rather
+than an after-effect of a performance. Both of these factors create new
+musical possibilities as they permit the space itself to become an integrated
+part of the composition. This body of work would not have been possible
+without OM, and the role of the system is explained with example patches
+demonstrating sound analysis, harmonic selection, rhythmic generation and
+texture manipulation.
+** Transmission Cycle, for Tenor and Strings: 40 mins, large-scale work for Jazz.ro
+:PROPERTIES:
+:EXPORT_FILE_NAME: TransmissionCycle
+:END:
+
+{{< soundcloud 145651175 >}}
+
+40 minutes | String quartet and solo Tenor | 2014
+
+# note that this file needs to be made smaller and web savvy
+An epic journey in sound, starting from simple premises, with melodic threads slowly unwinding unbroken over the course of 40 minutes. The piece is scored for amplifed string quartet and solo tenor. The string lines build slowly then fade in and out of focus, creating a shimmering haze of harmony above which the tenor line floats.  Fragments of text from Ovid's /Metamorphosis/ are delivered as if they were part of a distant news broadcast.
+
+The premier was performed by /The Romanian Quartet/: Mihai Balabas, violin; Marina Pingulescu, violin; Maria Coltatu, viola; Corina Ciuplea, cello, with John Potter, Tenor.
+
+"Along with the subtle sequencing of harmonies, the reflecting sound surfaces brought ebbing melodicism out in the generous space created by the recitative tenor line.. poignant"
+ADRIANA CARCU, /All about Jazz/ review
+
+Transmission Cycle, and an interview, was broadcast on Romanian TV.
+
+[[file:FIELD_jazz_in_church.jpg]]
+
+
+/Transmission cycle/ was commissioned by the Jazz.ro supported festival /Jazz in Church/, Bucharest. 
+
+*** Structure and Design considerations
+
+The piece represents the first large-scale work where I was specifically thinking about the effect the acoustic would have on the performance. Although this pre-dates pieces such as /Architexture I/ for ten-part choir and /Quantaform Series/ for solo flute which use measurement techniques to help bind the piece to the acoustic of the venue, /Transmission Cycle/ leaves time and space for the acoustic to become a performer too, creating floating suspensions and drones whilst the musicians move on to other materials. Harmonically, the work also represented a pivotal moment: I was at this point testing my new thinking on /Designing Music as a Surface/ where lines are sculpted out from larger blocks of material. During this work you can also hear the surroundings for these lines, as if they were silent actors in the performance through the gaps and spaces that are left behind. It's a kind of acoustic subtractive synthesis in this case.
+** Anagram for tenor and electronics - Premier the Old Customs House, Tampere
+:PROPERTIES:
+:EXPORT_FILE_NAME: Anagram
+:END:
+
+# 
+# status - it's a start. could explore further techiques
+# and other stuff
+#
+# check the date and spelling of the place
+# check which Gombert song this was actually based on
+# 
+# requirements
+# - [ ] needs pictures, possibly frame grabs from the video
+# - [ ] audio, and a sample of near the end
+# - [ ] some kind of tech description
+#
+{{< vimeo 26158788 >}}
+<sub><sub>
+with Film by Michael Lynch</sub></sub>
+
+/Anagram/ is a followup project to /Being Dufay/ and premiered at the Old Customs House, Tempere vocal festival in 2013. The work explores different ways of using pre-existing text to that within /Being Dufay/, searching for what I'll term the /minimum trace/: what is just enough to make a link to a pre-existing work, yet not so much that the piece overtly /borrows/ material.
+
+In /Being Dufay/, the approach to pre-existing music is to present it exactly as is, without hybridisation or attempts at cross-over. Editing is the sole compositional tool, and in the 50 minutes of the album, there is a sum-total of 6 minutes end-to-end Dufay. There are no substantive changes to the notes, or to the words. 
+
+In /Anagram/ the text is from a song by Gombert. I wanted to capture something of Gombert's approach to polyphony where a unique line often sits above a swirling texture of intricately layered material. Towards the end of the piece, I'm trying a new version of an old vocoder effect. Vocoders have been around since the 1960s, enabling electronic textures to take on vocal qualities. What results, is a set of static harmonies based on the sounds being input. This version is a little different as it bends the /input sounds/ towards the voice. 
+** Quantaform Series for Solo Flute in reverberant spaces :Space_and_Music:
+:PROPERTIES:
+:EXPORT_FILE_NAME: Quantaform
+:END:
+
+C Flute, 40 mins duration
+
+**** Background and new 2019 Realisation
+
+Quantform Series is an unusual 20 movement work for solo flute where each movement is precisely matched to the acoustics of the site in which it is to be performed. Each of the twenty movements is written to match a different acoustic space. The choice of which movements to perform, and in what order, is up to the performer.
+
+The pieces are tightly focused and short. Silence - and pauses in sound - play a significant part in this work as the reverberation from the venue is treated as if it were also a performer itself. The influence of the Japanese Shakuhachi (bamboo flute) is never far away. The performer must agilely create delicate overtone timbres and beautiful pitch-bends. 
+
+Quantaform Series calls for an extensive range of expressive control from the performer. Shaping the onsets of notes, the performer is ask to carefully control first few milliseconds of each sound to create distinctive 'envelope' patterns of attack and decay.
+
+ Through this technique well-known to synthesiser performers of electronic music, time can be made to feel like it is flowing backwards (through reversed amplitude envelopes), and sound can take on beautiful feeling of sustain (through smoothing out the onsets).
+
+ This process poses a considerable technical challenge to the performer, as these aspects of performance lie beyond articulating the notes and require a detailed concern for their micro-level shaping. Perhaps as a consequence, Quantaform Series has been taken-up as an finals examination work in Music Conservertoires (both in the UK and Europe) for graduate-level flautists.
+
+Virtuoso Jos Zwaanenburg first performed the cycle in 2013, and made a commercial recording of it on Sargasso (Sargasso: SCD-28071) - a contemporary music record label known for releases by Jonathan Harvey and Simon Emmerson. This recording used studio reverberation to re-create the performance environments to which the movements were linked. It is also possible to perform the work live this way, using an electronic reverberation unit (or pD/Max patch) and amplification. 
+
+However, the original intention for realisation of Quantaform Series was more challenging: to record each movement within an real (rather than simulated) acoustic space matching the required reverberation characteristics. This in practical terms is a complex process,as a performer would need to organise performances in up-to twenty different locations, creating a coherent bond between the acoustics of the site and the notes on the musical score.
+
+ For the first time in 2019 this is made possible through a grant from the Arts Council National Lottery Heritage Fund. This enables the making of a film featuring exceptional Leeds-based flautist James Wilson. Through the support of Screen Yorkshire, James will perform in real-world locations from around Yorkshire, pitting flute against environment in an unusual and dramatic dialogue in locations ranging from urban powerstations to sweeping natural vistas. 
+
+**** Original realisation - Jos Zwaanenburg
+
+
+
+{{< vimeo 42241755 >}}
+
+/I was intrigued to see how Jos Zwaanenburg would tackle award winning contemporary composer Ambrose Field's flute compositions. Divided into two different sections each deals with the flute in a different way./ 
+
+http://idwalfisher.blogspot.com/2013/09/
+
+The project marks a significant strand of new thinking in my compositional process. I wanted to link the composition and performance process in new ways, in this case, by understanding the acoustic in which the performance could be made and working backwards from that to the composition of the notes on the page. Too much of Western composition, for me, is in the abstract - looking at a score conjures up a vision of a dislocated, 'ideal' performance where the acoustic contribution is visually absent. What if it were not? 
+
+I began to design notational tools which enabled me to 'see' what the music would look like in certain reverberant environments. What would a longer acoustic do to the sense of harmonic suspension - or what would performing outside, or in a forest mean for the types of textures that I might write. Composers have had the acoustic of the performance in mind for centuries, and indeed, many of the world's music spaces are specifically designed around the music written for them. I wanted though to be able to take this relationship to a new level, of accurate predicition, of really being able to treat the bond between piece and place as a highly specific. 
+
+In order to do this, it is necessary to look not just at the verberation time of a venue, but the spectral content within it and how that sound occupies three-dimensional space. (Please see the [Architexture Series]({{<ref "archproject.md" >}}) of works for further examples of this technique).
+
+**** Recording
+
+Quantaform Series is recorded on Sargasso, SCD
+[[file:FIELD_quantaform_series.jpg][file:FIELD_quantaform_series.jpg]]
+
+**** Score
+
+A new edition of Quantaform Series is presently being prepared and will be out shortly. In the meantime, please contact me if you'd like to perform it and require the score.
+
+** Pod Twoją Obronę, for 25 part choir
+:PROPERTIES:
+:EXPORT_FILE_NAME: podtwoja
+:END:
+
+Pod Twoją Obronę (2013) | for 25 solo voices | Recorded live in Gdansk <br> Conductor: Jan Łukaszewski
+{{< youtube id="-eAPAleUSVw" >}}
+
+Pod Twoją Obronę was commissioned by the Polish National Chamber Choir /Polski Chor Kameralny/ to mark the 80th birthday anniversary of composer Henryk Górecki. <br>
+
+This work matches the large, resonant acoustics of the Kościół św. Katarzyny in Gdansk (in which the piece was performed) to the detailed part writing which occurs within the piece. Unlike the works in the [architexture series]({{< ref "archproject.md" >}}), which are written from an evidence base created through acoustic impulse-response analysis, /Pod Twoją Obronę/ relies on straightforward dimensions and materials measurements of the venue (made remotely) to inform the rates at which textures overlap and momentary vocal clarity can be achieved.
+
+You can listen to the results of the live recording (taken from the premier of performance in Gdansk) in the video clip above. 
+
+
+** Summer 1971: Imperfect forms - Ken Kirschner Remixed
+:PROPERTIES:
+:EXPORT_FILE_NAME: Kirschner
+:END:
+
+{{< bandcamp 1163390045 >}}
+# nb: hardwired in shortcodes directory to my track2
+# will need to fix the bandcamp shortcode to take 2 parameters, one for track.
+# this is a broken bodge!
+
+*** Imperfect Forms - The Music of Kenneth Kirschner Remixed
+
+I was invited to collaborate in the re-mixing of Ken Kirshner's beautiful music. But instead of remixing the work, I decided to intervene at an earlier stage and re-perform it prior to electronic manipulation.
+
+This work is an extract from a longer un-published set of pieces, /Kirschner Varations/. The work explores how borrowing (acknowledged, and with permission) from a living composer might feel. Part of the problem of /Being Dufay/ was that it wasn't possible to ask Dufay what he thought. Ken Kirschner, on the other hand, was able to input and kindly permitted the re-use of his piece. 
+
+Rather than re-using the original piano material as recorded audio, I transcribed and re-performed it on the piano using small loundspeakers mounted inside the piano on the soundboard. Environmental sounds were played through these speakers influencing the colour of the notes and sustains. I wanted to create a dreamy atmosphere with a tint of sonic nostalgia. Reprocessing of the recorded audio was accomplished using the Kyma Sound Design workstation (Kyma/Capybara). This particular track is one of the more highly processed, leaving little trace of the original recordings as the soundscape here is distilled to just the essential elements. 
+
+** Frozen Voyagers, electroacoustic sounds, high-order ambisonics spatial audio
+:PROPERTIES:
+:EXPORT_FILE_NAME: FrozenVoyagers
+:END:
+
+/Frozen Voyagers/ premiered at the MUTEK festival, Canada in 2014 in  /cinechamber/ : a spectacular 360 degree surround audio and video auditorium curated by Naut Humon from Recombinant Media Labs. The piece is designed to maximise the spatial qualities of the venue and sound projection system. I'm aiming to try and capture a sense of 'frozen time' through the huge amount of swirling audio activity: standing within this sonic vortex might be a little like being in the eye of the storm: stillness and extreme motion at the same time.
+
+To create an unusual immersive sound spatialisation, I chose a dual-technique approach on this piece. Third order ambisonics helped to generate a sense of defined locations for sounds which needed to be easy to locate. This was combined with first-order ambisonics, chosen to  create a sense of diffuse, seemless ambience. Each technique has its own merits: the more technically 'precise' system of higer order ambisonics is not necessairly musically more useful than first order. As Ambisonics is backwards compatible, it is  straightforward to mix first order techniques and more advanced methods.
+
+The sonic material of piece itself dates from a period of work at Recombinant Media Labs' San Francisco facility in 2006. Here, I installed myself in the 'synth room' at any possible opportunity, being able to use modular surge.
+
+The piece is available as a ten channel version.
+
+*** Download
+You can download this multichannel audiowork [[https://github.com/ambrosefield/FIELD_Multichannel_FrozenVoyagers][here at GitHub]], under Creative Commons License.
+
+** Being Dufay :noexport:
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: whatever
+   :END:
+
+** --------------------- got to here -------
+** Storm! (2006) :noexport:
+:PROPERTIES:
+:EXPORT_FILE_NAME: Storm
+:END:
+
+/Track notes/
+
+This is California!
+
+The track starts with what appears to be an announcement of place - a whole state. A summary... /this/ is California. Easy to think so, with the sirens and traffic noise. However, it's not really California. It's the California stop along the EL in Chicago, where the majority of sounds from /Strom!/ were recorded. Other locations included RAF bases (with permission) - in particular, the huge sounds of Tornado jet engines form a particular feature of the work, along with the sounds from street demonstrations which were recorded in San Francisco. I wanted to aurally see 'California' through 'California' (the tube stop). 
+
+The Cathedral
+
+This is as close as it gets to an identifyable popular music form: a consistant, and broken refrain performed on Yamaha DX synthesisers interrupts a chaotic and turbulent surface. However, it doesn't stay static: the audio scene progresses from bad to worse. Helicopters fly past, street protest sounds (breaking of large metal posts, and huge concrete blocks being dragged along road surfaces) join the party. How does it end - it's an impossible situation. A lone monk, entirely synthesised using a then contemporary plugin (often used as a joke or amusement) used here in an utterly serious manner: arrising from the chaos it's there to take a moment to think about the relationships between East and West.
+
+Gum
+
+What's real, what's not? Is the recording the 'authentic' item, or the street scene. A dialogue emerges contrasting fake and real. 
+
+Hurrican Ridge
+
+This is the only true 'eletroacoustic' piece on the album
+#
+*** Why does it sound this way?
+The music is a kind of digital music concrete montage, owing much to Pierre Shaeffer, but equally, to Frank Zappa and punk aesthetics. Placing hard-core metal guitars (which caught the imagination of a reviewer in the Guardian, who said "at least the future has guitars") into what might have been termed an 'acousmatic' context (music made by sound processing) together with the sounds of street protest was a little unusual at the time. The album won an honorary mention at the 2006 Prix Ars Electronica. It's designed to follow no-one's form: I have been told by academics that I need to take spatialisation lessons and learn about the classical forms of electroatoustic music. Whilst this might be true, I wanted to re-write the rulebook on what was possible with the available audio processing technology by seeing literally /any/ material as viable input source and an aesthetic crossing the avant garde of pop and classical design. 
+
+*** Processing
+Sounds on the album are made to 'co-operate' with each other in a musical structure through the application of digital sound processing. The techniques on this album included: CDP ('the composers' desktop project), Chris Penrose's shapee software, Paul Lansky's CMIX, and Mara Helmuth's Scotchgran. I'm indebted to these generous people for making their code available, as at the time, there were very few 'plugins' or 'soft synths'. 
+
+*** Making of
+Recordings were made binaurally, using cheap domestic microphones (primo, radio shack lavs) into a Sony minidisk recorder. They were then transferred into the digital audio workstation through the analog outputs - it sounded better that way. The primo mics were taped onto a pair of headphones, and I did some post filtering to remove some of the more unusual peaks and troughs in the response from my head (or Head-related-transfer function, to be exact). This Gurrilla method, in the absense of 'professional' solutions, worked extremely well.
+*** Technical details and mastering
+Storm! is presented on CD to provide a vivid and dynamic presentation, making use of inter-track gaps for subtle low-level links. These tiny tracks, made from manipulating the 'pause' zone in the CD standard (where the player counts backwards to 0) don't appear in digital file versions of this album, which is a shame. As an album, it's about as loud as physically possible. It rocks. Dynamics are however carefully taylored in blocks, where the music needs contrast it has it. The album itself was mastered to analog, on Ampex 911 tape, and re-digitised using an Apogee PSX-100 using UV22 resolution enhancement.
+
+One hell of a place to lose a cow
+
+** 1801 for orchestra of laptops with spatialisation and multichannel video :noexport:
+:PROPERTIES:
+:EXPORT_FILE_NAME: 1801_for_laptops
+:END:
+
+Our aim was to explore how humans could interact with technology on a mass scale, as to that point, there had been plenty of experiments with smaller ensembles.  Our approach was a little different to the laptop orchestras established in the US however. 
+
+I sought sponsorship from Apple who helped us make the largest laptop ensemble to date assembled in the UK. However, we didn't specifically want to be an /orchestra/: we didn't want  'instruments' in a performative sense (what would be the point when you can play real ones - acoustic or electronic), nor did we wish to simulate of the acoustic radiation of multiple single sources which occur within an orchestra.  Instead, humans work together to produce the end result, but there is no sense of 'part' or allocated duties in a hierarchical sense. Rather than systems which could be 'played' by each user, we created a single, distributed system with multiple control points. 
+
+Stripping away notions of the 'instrumental' from the orchestra exposed new challenges: in what way can a hybrid, distributed performance medium permit new types of sound expression? There would be no point to this if the resulting music was something that could be easily accomplished already, or if the music was artistically less valuable than what might be created through other existing means. So the design of piececs, rather than systems, was our priority.
+
+In /1801/, none of the individual laptops contributes sound directly to the performance: instead, each user shapes gestures and materials which inform a single audio rendering process. This technique was also helpful in enabling large-scale interaction without sending 50 multichannel audio streams over wi-fi. 
+
+The humans sitting at the laptop however do get some audio feedback for their actions: a local individual render auralises the gestures they make for individual headphone monitor replay. However, this is only a simulation to allow accurate control, not a 'part' within an 'ensemble' as centrally, the data produced by the human mass interaction is analysed for emergent features.
+
+Inspired by pioneering film from Thomas Edison, I built a piece that slowed down his original film from the 1801 San Francisco Earthquake, spreading each frame over a multiple video channel installation to create  a distributed, but linked visual experience. After rendering, the result of this distributed freeze-framing reminded me a little of the sense of encapsulated time in /24 hour psycho/, demonstrating that technique in some instances shapes interpretation more than material. 
+
+A paper on our work was presented, and is available here
+
+> How to cite this paper
+
+# where is the paper
+
+# audio
+
+# photos
+** QCH pour le weekend, live electronics and video :noexport:
+:PROPERTIES:
+:EXPORT_FILE_NAME: qchplw
+:END:
+*** purpose
+
+includes hard-hitting, industrial soundscape, subterrainain bass and driving rhythms, assembled live.
+
+Whilst clearly set within a Club genre, this show was designed to be challenging /and/ enjoyable. This necessitated thinking about what holds the music together, and how far one parameter can be bent and subverted whilst others remain delivering
+
+ carefully designed work to challenge assumptions about what electronic music could and should not be.Let's grosly generalise for a minute: IDM avoided 4 on the floor preferring wonky polyrhythms realised with academic-grade software, academic electronic music avoids IDM's legacy frequently using the techniques of commercial music to realise sounds, commercial independent electronic music /always/ avoids academic music yet often uses the tools, process and sounds of it. Meanwhile everything avoids metal guitars and reverb of any kind and nobody now wants to be seen behind a laptop lid. You're also at an advantage if you a) have a super large travel budget and can record the sound of locusts mating down a volcanoe lava tube on the edge of the andees or b) have a pile of vintage synthesis units that nobody else is going to be able to buy. 
+# this might be a bit too provocative. Why not say instead what the piece itself does do.
+
+What a mess. Am I bothered?  I'm acutally not, because our project is not to position aesthetics. Our mission was:
+- never mind the technology
+- we wanted to make a challening show with well thought-through sounds
+- it needed to have rhythmic elements anyone could identify with, yet not be simplistic.
+- it should deliver energy
+- it should deliver sound and graphics at quality standards to be proud of.
+** General approach to composing and research :noexport:
+# explain what work is characterised by.
+
+** About Spaces and sight specific composition :noexport:
+** Groupwork in Music Education :noexport:
+
+This chapter looks at an area of music education that, in my view, needs further enquiry: what do we do with group work? In Educational settings, it is important to work with groups of all sizes. Typically, in an instructive setting, groups are required for practical reasons: not enough space, instruments, time, ability to feedback individually or performance opportunities. These are not the best reasons to be conducting group work! The chapter proposes alternative ways to think about groups from a more relevant standpoint: teamworking is vital in employment situations, and where it exists there, it is well structured with clear goals and milestones. Yet in education, where is the process for achievement in groupwork? This chapter makes some suggestions, hinting that a re-think is necessary, and looks at methods to consider how creative work might be structured so that all participants can gain an educational understanding of the real processes behind team decision making as a process in its own right, and not as a substitute for individual work which might be perceived to be preferential.
+
+Topics within the article include:
+
+You can reference this work like this:
+
+Here is an appropriate bibtex record:
+
+
+# this paragraph needs a re-write.
+
+** Technology in Music Education :noexport:
+
+# very rough text
+
+This article considers how best to situate music made with technology within
+an educational setting. It proposes that engaging with contemporary work, rather than 
+historical models is key to understanding the expressive possibilities of technology.
+Technology must not replicate what we can do without it: we have instruments, performers
+and score systems of various kinds already. It isn't innovation simply to add technology to a project.
+Instead, the article suggests that using technology as a facilitator to engage deeply
+with the substance of music is a more productive approach than simply 'learning the software'.
+
+The article draws together examples from musicians who have pushed boundaries
+in the development of technology-based approaches. It is prefaced with a discussion
+in more abstract terms regarding the underlying principles.
+
+Topics discussed within the article include:
+
+You can reference this work like this:
+
+Here is the bibtex record.
+
+** Composing for Site-specific Acoustics :noexport:
+** Music for public Augmented Reality (AR) presentation :noexport:
+** Re-thinking the past :noexport:
+# this is basically the archaeology paper,
+# describing how to re-think the past from the 
+# standpoint of the present.
+** Architexture III, for 6 part choir :noexport:
+** Centre for Chronic Diseases/Lawrence Payot Collaboration :noexport:
+# remeber this is documented in Alive
+
+** Semiotics in Ryoichi Kurokowa :noexport:
+** Janet Lightpath remix (necessary?)
+** Simulacra and Simulation: the new sonic objects :noexport:
+
+This chapter, in Simon Emmerson's seminal text
+
+** Installation - Voce Versa, Dufay prototype :noexport:
+** Still Water :noexport:
+Hungarian National Radio
+UNESCO
+** Expanse Hotel, ambisonics (1999) :noexport:
+** Pyrotechnic, ambisonics (1996) :noexport:
+** Geosphere (1990) :noexport:
+First large-scale ambisonics spatialised work with the CDP system.
+Procedure, Richard Chartier
+Suction-Sound-System, London
+
+* About
+:PROPERTIES:
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+  :EXPORT_HUGO_MENU: :menu about
+  :EXPORT_HUGO_SECTION: about
+  :EXPORT_HUGO_WEIGHT: auto
+  :END:
+** Ambrose Field
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:END:
+[[file:AMBROSE_FIELD_crop.jpg]]
+British Composer
+
+*Ambrose Field*'s music has been described as "Mesmerising and
+beautiful" by ClassicFM magazine, featuring "Interlocking tonal
+nuances of fragile beauty, without equal"  (JazzEcho.de) and as being
+"Completely Compelling" by BBC Music. His pieces combine lush
+harmonic soundscapes with a focused, contemporary aesthetic. Field's
+work has been performed at The Vienna Konzerthaus,
+Parco Della Musica, Rome, The Chicago Early Music Festival, Perth
+Festival, Australia, Dancity Festival, Italy and the Los Angeles
+Convention Centre. He has been a resident composer at Hungarian
+National Radio (supported by UNESCO), Recombinant Media Labs San
+Francisco, and the Banff Centre for Arts and Creativity, Canada. His
+album /Being Dufay/, is recorded on ECM records (ECM 2071) and is
+distributed by Universal. It toured to 13 nations as a live
+performance. 
+
+Field writes for instruments, choirs, and electronic
+media. His music has been commissioned widely for concert performance
+and for immersive media applications. The large-scale vocal piece /Pod Twoją
+obronę/ (25 voices, one-to-a-part) for the Polish National Chamber
+Choir Polski Chor Kameralny is a monolithic vocal soundscape of
+sculptural proportions and was specifically commissioned to honour the
+80th Birthday Anniversary of notable Polish composer H. M. Górecki .
+For his work with technology, he is a three-time recipient of the
+honorary award at the Prix Ars Electronica, Linz, and has received
+international performances including in the RML Cinechamber at MUTEK,
+Canada, 2014. Interdisciplinary creative questions underpin his
+output. Field's series of architecturally informed compositions
+/Architexture/ make use of specific acoustics of a site to inform how
+a score is crafted. The technically challenging cycle of pieces for
+solo flute /Quantaform Series/, which re-thinks the relationship
+between performer and environment, is to be the subject of a new film
+made with support of the Arts Council UK and National Lottery Heritage
+Fund (2019). He has collaborated with researchers in other disciplines
+(sculpture, health science, education, heritage), worked as industrial
+consultant to media companies and technology firms, acted as
+investigator and co-investigator on research grants, and served as a
+jury member for national and international composition competitions.
+
+Ambrose is presently interim Dean of Arts and Humanities at the University of York, UK, 
+where he was previously Head of Department of Music from 2013. Field was appointed to Honorary Professorships at the Beijing Institute for
+Advanced Innovation, and China National School of Music, China
+Conservatory in 2018.
+
+
+
+* ----- Sections for later ------ :noexport:
+* Posts
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: posts
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+  :EXPORT_HUGO_MENU: :menu main
+  :EXPORT_HUGO_SECTION: posts
+  :EXPORT_HUGO_WEIGHT: auto
+  :END:
+** Landing text for posts
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:END:
+This is the landing text for the posts menu.
+
+** TODO First Post topic here :@my_topic_tag:
+:PROPERTIES:
+:EXPORT_DATE: 2018-12-19
+:EXPORT_FILE_NAME: post-title-in-slug-form
+:END:
+
+This is the text for the first draft. It's getting longer all the time.
+
+** TODO Second post topic here :@my_topic_tag:
+:PROPERTIES:
+    :EXPORT_DATE: 2017-12-19
+    :EXPORT_FILE_NAME: post-title-in-slug-form2
+    :END:
+** TODO Third topic here, but this is done :@topic3:
+CLOSED: [2017-12-19 Tue 17:00]
+:PROPERTIES:
+:EXPORT_FILE_NAME: post3
+:END:
+This is the third topic, but it is done.

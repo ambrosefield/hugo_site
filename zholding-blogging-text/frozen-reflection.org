@@ -1,0 +1,33 @@
+#+TITLE: Frozen Reflection, Sleeping Buffalo
+
+Late December. Cold air from the Artic drifted slowly over Alberta, as temperatures reached a nose-chilling minus 30 degrees Celsius outside my hut in the woods. This piece stems from my work as a resident artist at the Banff Centre for the Arts and Innovation, Canada, in 2016. The project at the time was to work on a large-scale orchestral commission. However, whilst doing so, I discovered new possibilities for harmony on the piano by developing a compositional method which combines external resonances with my own choice of colours. This technique proved workable, and forms the backbone of this piece which I later composed at home in the UK. Sparse, delicate and icy textures emerged: something from Banff appears to have soaked through into the music.
+
+ The piece is structured in two parts. Part one contains distant resonances, provided by e-bows -- an electro-mechanical device which serves to keep a single string vibrating indefinitely. These unusual sounds are gradually brought into focus, appearing within a sequence of harmonies designed to include them as seamlessly as possible. Small, isolated moments are set against a continuity of delicate drones, and tiny points of rhythm draw attention to subtle changes in the sonic landscape changing slowly underneath them. This process poses many technical challenges for the performer, as the amount and timing of the additional resonances provided by the e-bows requires extremely precise control in addition to traditional piano techniques.
+ 
+The second section shows an alternative view; a reversal of this situation. Instead of building harmony on top of drone-like resonances as previously, I wanted to gradually fill out the negative-space around the drone-sounds with dense, chromatic writing. A subtle auditory effect results: at the end of busy passages, the resonance of the drone emerges during moments of rest where it can itself “modulate” the sound of the piano, from inside. Normal piano chords take on a transparent, shimmering quality during these silences-in-sound. A brief moment of recall closes the piece, once both main characters have been exposed. I feel that Charles Ives might have inspired me a little here.
+ 
+Frozen reflection, Sleeping Buffalo is written for Megumi Masaki. I am extremely grateful for her generous input during the compositional process, which has helped me shape and refine this piece.
+
+* Research
+
+I like to ask creative questions through composition. This work sets out to test the possibilities:
+- When a set of fixed, artificial resonances are introduced into the piano can they offer new perspectives on harmony and structure?
+- What are the ensuing relationships between the detailed reverberant decay of the piano, and the harmonics provoked by the resonators?
+- Is it possible to craft piano lines and textures with the knowledge that the artificial resonances will themselves change how the piano responds acoustically?
+
+These questions are an extension of my work on matching acoustic resonance to compositional craft in detailed and defined ways, first seen in Quantaform Series (for solo flute and resonances), and the Architexture series of vocal compositions. Here, the challenge is to make this dynamic specific to the piano and the range of nunances and expression that are possible. 
+
+** Structure
+
+The piece has two parts, yet both are different 'views' on the same creative proposition.
+ 
+Part one uses delicate, thin sounds in order to show harmonic spectra that result as a by-product from the additive combination of  artificial sustained resonances and the performed notes. The idea is that during the reverberation which results after playing a note, chord or cluster, modulation occurs which perceivably changes the acoustic results as the sounds die away. You can hear this on the recording particularly at [TIME] and [TIME].
+
+The harmonies used here were selected through a process of aural choice, re-listening, and subsequent spectral analysis within open-music. 
+
+*** analysis in open-music
+
+
+
+
+

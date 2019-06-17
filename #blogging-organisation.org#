@@ -1,0 +1,81 @@
+# start server. To stop the server, to C-x k to kill the server buffer
+[[shell: cd C:\Users\ambro\Dropbox\06_web\sites_master\blog & hugo server &][start hugo server]]
+[[http://localhost:1313/][open web browser on local file]]
+
+# directories
+[[file:C:\Users\ambro\Dropbox\06_web\sites_master\blog\content\posts][filemanager: directory for development of posts]]
+[[file:C:\Users\ambro\Dropbox\06_web\sites_master][filemanager:sites mater directory - open here for new posts, etc]]
+[[file:C:\Users\ambro\Dropbox\06_web\sites_master\blog\static\img][filemanager: images directory]]
+images can be optimised with the caesium image compressor tool
+
+# creating a new post, use: hugo new posts/blah.md in powershell link below
+[[shell: cd C:\Users\ambro\Dropbox\06_web\sites_master\blog & powershell &][open powersrehell]]
+hugo new posts/whatevermd
+
+# select post to edit in emacs
+[[file+emacs:C:\Users\ambro\Dropbox\06_web\sites_master\blog\content\posts][open dired on posts directory]]
+
+
+# -- write the post in mark down 
+# -- links
+[like this](http://someurl "this title shows up when you hover")
+
+# emphasis
+*this is italic*
+**this is bold**
+
+# lists
+asterisk on its own starts an unorded list (not here, it is org)
+
+# tables are pipes and dashes
+ first heading | second heading
+-----------------| -------------
+content | other content
+content | other content
+
+# headers
+This is a huge header
+=====
+
+this is a smaller header
+----------
+
+# horizontal rule
+there or more --- on a line
+-----
+
+# images
+![alternate text](https://sourceforge.net/images/icon_linux.gif "hover over title")
+
+# text size use <sub><sup> blah </sub></sup>
+<sub><sup>Small text</sup></sub>
+<sub><sup><sub><sup>Tiny text</sup></sub></sup></sub>
+
+# carriage return, linebreak
+<br>
+
+
+#------------------------------------------------------------------------------------------------------------
+
+# progress
+
+at the moment, there is no change to the front page
+content is within the posts section.
+the actual blog directory holds writing text as above.
+
+# this kind of thing goes in the markdown files as headers
+# does youtube links
+#
+---
+title: "Title of the page"
+date: 2018-06-28T12:03:29+01:00
+draft: false
+---
+### This is the title
+![Megumi Masaki](/img/megumi1.jpg)
+{{< youtube id="e2-Ndzyv6K0" >}}
+# 
+
+** test one
+* test one test two
+**  this is the second. why does it not displa

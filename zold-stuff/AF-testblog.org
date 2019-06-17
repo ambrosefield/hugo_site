@@ -1,0 +1,239 @@
+#+STARTUP: content
+#+AUTHOR: Ambrose Field
+#+HUGO_BASE_DIR: .
+#+HUGO_AUTO_SET_LASTMOD: t
+
+* instructions :noexport:
+#  ----------------------------------------------
+#  AF Website blog
+# This line added in quick editor on android
+#  ----------------------------------------------
+
+# ----------------------------------------------
+# C-C C-X p  gets the property draw out.
+#
+# Dont't forget everything needs an EXPLORT_FILE_NAME property in the draw
+# regardless of post or page. Might want to setup a template to deal with this.
+#
+# If you change the EXPLORT_FILE_NAME_and not the post title, it will still
+# appear and won't get deleted.
+#
+# the directory is  content/posts/  
+# 
+# -----------------------------------------
+#
+#
+# C-C E H A  rebuilds the whole thing
+#
+* System - server, browser :noexport:
+# start server. To stop the server, to C-x k to kill the server buffer
+[[shell: cd C:\Users\ambro\Dropbox\06_web\sites_master\blog & hugo server &][start hugo server]]
+[[http://localhost:1313/][open web browser on local file]]
+* System - directories etc :noexport:
+# directories
+[[file:C:\Users\ambro\Dropbox\06_web\sites_master\blog\content\posts][filemanager: directory for development of posts]]
+[[file:C:\Users\ambro\Dropbox\06_web\sites_master][filemanager:sites mater directory - open here for new posts, etc]]
+[[file:C:\Users\ambro\Dropbox\06_web\sites_master\blog\static\img][filemanager: images directory]]
+images can be optimised with the caesium image compressor tool
+
+# creating a new post, use: hugo new posts/blah.md in powershell link below
+[[shell: cd C:\Users\ambro\Dropbox\06_web\sites_master\blog & powershell &][open powersrehell]]
+hugo new posts/whatevermd
+
+# select post to edit in emacs
+[[file+emacs:C:\Users\ambro\Dropbox\06_web\sites_master\blog\content\posts][open dired on posts directory]]
+[[file+emacs:C:\Users\ambro\Dropbox\06_web\sites_master\blog][open dired on blog directory, e.g, to edit config file]]
+
+* Notes - Markdown  reference :noexport:
+# -- write the post in mark down
+# -- links
+[like this](http://someurl "this title shows up when you hover")
+
+# emphasis
+*this is italic*
+**this is bold**
+
+# lists
+asterisk on its own starts an unorded list (not here, it is org)
+
+# tables are pipes and dashes
+ first heading | second heading
+ -----------------| -------------
+content | other content
+content | other content
+
+# headers
+This is a huge header
+=====
+
+this is a smaller header
+----------
+
+# horizontal rule
+there or more --- on a line
+-----
+
+# images
+![alternate text](https://sourceforge.net/images/icon_linux.gif "hover over title")
+
+# text size use <sub><sup> blah </sub></sup>
+<sub><sup>Small text</sup></sub>
+<sub><sup><sub><sup>Tiny text</sup></sub></sup></sub>
+
+# carriage return, linebreak
+<br>
+
+
+#------------------------------------------------------------------------------------------------------------
+
+# progress
+
+at the moment, there is no change to the front page
+content is within the posts section.
+the actual blog directory holds writing text as above.
+
+# this kind of thing goes in the markdown files as headers
+# does youtube links
+#
+---
+title: "Title of the page"
+date: 2018-06-28T12:03:29+01:00
+draft: false
+---
+### This is the title
+![Megumi Masaki](/img/megumi1.jpg)
+{{< youtube id="e2-Ndzyv6K0" >}}
+# 
+
+* Notes - Todos and issues :noexport:
+- [ ] Find out about images in the main directory
+- [ ] Get links to all videos on youtube
+* ----- Sections active blog ---- :noexport:
+* Music
+  :PROPERTIES:
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+  :EXPORT_HUGO_MENU: :menu main
+  :EXPORT_HUGO_SECTION: Music
+  :EXPORT_HUGO_WEIGHT: auto
+  :END:
+** Featured Music
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:END:
+**** Architexture I
+# ![frozen1](/img/ebows-on-stringsP.jpg)
+{{< youtube id="e2-Ndzyv6K0" >}}
+<sub><sup>
+Responsive composition to match venue acoustics | Learn more
+</sup></sub>
+<br>
+**** Pod two: in memoriam Gorecki
+{{< youtube id="e2-Ndzyv6K0" >}}
+<sub><sup>
+Commissioned to celebrate 80th Birthday annerversary of H.M. Gorecki
+</sup></sub>
+Learn more
+<br>
+<br>
+**** Being Dufay
+{{< youtube id="e2-Ndzyv6K0" >}}
+<sub><sup>
+Recorded by EMC records and distributed by Universal
+5* BBC Music, 5* Classic FM managize
+</sup></sub>
+Learn more
+# experiment with sub pages on the music page
+<br>
+<br>
+
+*** Musical works
+
+> My musical output spans works for Voice, Instruments and Electronics.
+> You can read about the design principles behind them on the research pages.
+
+** Acoustic
+:PROPERTIES:
+:EXPORT_FILE_NAME: music_acoustic
+:END:
+Acoustic music here.
+
+** Vocal
+** Electronics
+
+* Pages
+  :PROPERTIES:
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+  :EXPORT_HUGO_MENU: :menu main
+  :EXPORT_HUGO_SECTION: pages
+  :EXPORT_HUGO_WEIGHT: auto
+  :END:
+** My first page
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: whatever
+   :END:
+
+   Page content for my first page goes in here.
+Whatever you like to put happens.
+
+** TODO my second page
+:PROPERTIES:
+:EXPORT_FILE_NAME: second page
+:END:
+This is the content for my second page.
+* About
+:PROPERTIES:
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+  :EXPORT_HUGO_MENU: :menu about
+  :EXPORT_HUGO_SECTION: about
+  :EXPORT_HUGO_WEIGHT: auto
+  :END:
+
+Does this information display here
+
+# this subsection in the about menu is the text displayed on the menu landing page
+** Ambrose Field: Biography
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:END:
+
+Here are some things about my about page.
+This is my about page
+** Test stuff in the about menu
+:PROPERTIES:
+:EXPORT_FILE_NAME: newpage2
+:END:
+This is the new page 2
+* ----- Sections for later ------ :noexport:
+* Posts
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: posts
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
+  :EXPORT_HUGO_MENU: :menu main
+  :EXPORT_HUGO_SECTION: posts
+  :EXPORT_HUGO_WEIGHT: auto
+  :END:
+** Landing text for posts
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:END:
+This is the landing text for the posts menu.
+
+** TODO First Post topic here :@my_topic_tag:
+:PROPERTIES:
+:EXPORT_DATE: 2018-12-19
+:EXPORT_FILE_NAME: post-title-in-slug-form
+:END:
+
+This is the text for the first draft. It's getting longer all the time.
+
+** TODO Second post topic here :@my_topic_tag:
+:PROPERTIES:
+    :EXPORT_DATE: 2017-12-19
+    :EXPORT_FILE_NAME: post-title-in-slug-form2
+    :END:
+** TODO Third topic here, but this is done :@topic3:
+CLOSED: [2017-12-19 Tue 17:00]
+:PROPERTIES:
+:EXPORT_FILE_NAME: post3
+:END:
+This is the third topic, but it is done.

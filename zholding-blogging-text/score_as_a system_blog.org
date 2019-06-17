@@ -1,0 +1,100 @@
+
+#+TITLE: Blog posts in Practice-based research
+
+
+* Housekeeping
+
+** Titles
+FieldWork
+Composition research, random thoughts, and ideas I'm toying with.
+The backstage of my mind. 
+Confronting Real-time
+# this could actually be a title of an article around these issues
+
+No goods for sale
+Self Assembly Unit
+
+** Items to check
+*** Concert for orchestra - Cage - any other examples of non-determinist scores
+
+** General thoughts and notes
+# its a good idea
+# can usefully foreground profile
+# needs to be combined with high-quality presentation
+# should be written up on the day as projects evolve
+# perfect for toolkit pieces, process-based work
+# provides a test vechnicle for frameworks based composition, etc.
+# anything modular, community-based, will work here. Look for different community situations to effect change.
+
+
+
+* Scores for a rehearsal process
+
+[2018-06-07 Thu]
+
+I've been working with Payee Chen (credits) and James Woodrow (Icebreaker) on Prof Craig Vear's leverhulme project examining the role of musical scores in a digital age. Today was the first of our collaborative working sessions, and i had set out to investigate the practical questions surrounding how the /design process itself/ of musical works can be re-considered if we blur boundaries between the most traditional role divisions: composers and performers. I wanted though to do this in new ways, looking further than improvisation techniques, open-scores or devising processes, although I'm clearly going to need to draw on these ideas along the way. What I was attempting to find out is:
+
+- /what happens if we design a score with the intention of being for the rehearsal process, rather than for a performance process?/ What if the sole purpose of the score was to organise the workflow of how a rehearsal might unfold, of how choices are made. These scores should allow back-tracking, a combination of limitation and open-endedness, and all of the non-linear productive turbulence that accompanies composiational design questions. In the 21century, it is not necessary to confine scores to a single context within which they are explored or applied: technology has long ago freed us from particular buildings and situations, so why do scores always have to describe performance workflows, built on an assumption that a certain type or context of performance will result. Lydia Goeher has addressed this point in 
+ 
+So, most scores are (with some notable exceptions in areas of conceptual art/music) concerned with specifying what is to happen in a performance rather than how a rehearsal can unfold. Traditional scores are a flow of realtime performance decisions mediated through a symbolic representation. Yet, in other areas of the arts and design the idea of coming up with a design for a form, product, idea, or even artwork is not considered to be dealt with solely in the real-time. 
+
+ A complex and non-linear system of relationships results between the creation of the artwork and the reception of the performance. Jean-Jaques Nattiez has covered this extensively in his writing, in particular, in /Music and Discourse/. Even in open-ended works that do factor in rehearsal and pre-selection of materials, the score awkwardly doubles up as a performance tool: 
+
+What I'm interested in though is that given this relational complexity, how is it possible to enable people who consider /performance/ to be their primary role description to take a full and active part in a compositional process. In fact, I'd prefer to call it a /constructional process/, so that we are free of the baggage of the nineteenth century for a moment.
+
+This constructional process importantly needs to happen off-line, and out of realtime, removing decision making from the moment of performance and placing it in a more critical and reflexive relationship to the material under development. 
+
+This raises some important questions: at what point does the work become a performance and cease to be a composition? When can the piece be considered a fixed article?
+
+I suggested to James and Payee that my role was not one of a 'composer', more one of a 'designer'. I did not want to be credited with the composition of a work for which I had given only the outlines. Instead, I aimed to joinup aspects of the thinking that I'd experienced as an Education facilitator directly with the types of open-ended score exploration (often intended for performance, even if composition is a part of that performance - Such as Cage's famous Concert for Orchestra) to create something new.
+
+So my challenge to the performers was to create a score for a rehearsal process, rather than a performance process, enabling them to decide how much or little of the rehearsal process to represent in the final artwork. Where that line is crossed, between fluidity and fixed forms is an important part of the process.
+
+- /if the performers can now inhabit an off-line, and more detailed relationship with the work, where does this leave the audience?/ Of course, we accept that there is no 'one' single audience here, and the word is used as a label for the end-recipients who are kind enough to devlote their time to listening to the consequences of this activity. 
+
+* The self-assembly-unit series
+
+Inspired by a well known flatpack furniture shop, I wondered what would happen if performers were given all the constituents of a piece, and a method for assembly. I wanted to challenge the idea that scores are just something that reflects a performance, and an ideal performance at that. I wanted to creat
+
+
+* How these questions were investigated
+
+To assess these issues, I deisgned a 
+
+* Open and reproducible research
+
+Reproducible research in musical composition
+
+In science reproducible research, via open processes, is key to knowledge acquisition and the public understanding. Yet musical composition can be a closed process, particularly in situations where that process takes place away from collaboration or is removed from the option to test and refine ideas with performers. 
+# Sometimes, within that closed process it is easy to blur the distinctions between research and craft. 
+
+The idea of /reproducible research/ in musical composition sounds crazy at first glance. For one thing, composers often need to adopt a workflow where producing a finished product, a professional commission or simply developing a work to express something innately personal is /the objective/. I've done all of those things, but ever since encountering Chris Small's work a while back I've felt a need to design creative processes for situations that might make a difference to other people. So the point of offering materials, designs and processes is not to necessarily reproduce /my/ final piece, but to enable or facilitate the creation of something new. It's a two-way system, as anyone doing so will be putting my methodology to the test /through/ being exploratory and creative. 
+
+I'll put my pieces which involve this type of work on this site. I want to see if open and reproducible creative processes exclude professional commission, or invalidates publisher contracts within the highly protective industry that still surrounds musical creation. We shall see as this project progresses.
+# these pieces shift the ip from final product to creative process
+
+ 
+
+
+* Self Assembly unit #1
+
+For this project, the materials which were used are freely available: you are welcome to reproduce my creative experiements, perform the piece, ask questions and see where you get to. A complete toolkit is available at the end of this article, warts and all.
+
+This site is itself hosted on the collaborative development platform github. Files are written in emacs' org-mode, and the page sources are available. Not that this is any model of how to do anything - I'm far too new to emacs/git/org to consider this technically an achievement, but if you're considering doing something similar it might just help. 
+
+* How to cite this work
+
+This work is released in the form of a blog, to provoke discussion and further work. You can cite the work as follows:
+
+To provide feedback to the project, please add your comments below.
+
+* How to perform Self Assembly Unit - number 1
+* piece: No goods for sale, for Trio 
+
+/No goods for sale/ challenges the idea of the goods-based logic which surrounds the craft of musical composition. Instead of offering a final piece, for your consumption or purchase, the product here is a development of the thinking in Self-Assembly Unit in an attempt change where the act of composition is located and who undertakes it.
+
+As I've remarked before, the open-score work of composers from the 1960s offers some solutions to this, but also foregrounds a number of problems due to the lack of specificty and limitation on /how to actually make the music/. As a result, performers fall-back on improvisation, historical contexts they have encountered where these types of materials showed up, and 
+
+
+
+ 
