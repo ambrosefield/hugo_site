@@ -27,7 +27,10 @@
 * System - server, browser :noexport:
 # start server. To stop the server, to C-x k to kill the server buffer
 # to export the local tree C-e,HO  or C-e, HA
-[[shell: cd C:\Users\ambro\Dropbox\06_web\sites_master\blog & hugo server &][start hugo yserver]]
+[[shell: cd C:\Users\ambro\Dropbox\06_web\sites_master\blog & hugo server &][start hugo yserver]
+
+[[shell:  cd C:\Users\ambro\Dropbox\06_web\sites_master\blog & hugo -d ../ambrosefield.github.io/][build deployment site in ambrosefield.github.io]]
+[[shell:
 
 [[http://localhost:1313/][open web browser on local file]]
 * System - directories etc :noexport:
